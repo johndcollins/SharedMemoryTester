@@ -157,8 +157,13 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbLBOuterMarker = new System.Windows.Forms.CheckBox();
+            this.cbBBOuterMarker = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -1292,6 +1297,7 @@
             this.cbOuterMarker.TabIndex = 112;
             this.cbOuterMarker.Text = "OuterMarker";
             this.cbOuterMarker.UseVisualStyleBackColor = true;
+            this.cbOuterMarker.CheckedChanged += new System.EventHandler(this.cbOuterMarker_CheckedChanged);
             // 
             // cbMiddleMarker
             // 
@@ -1476,7 +1482,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(981, 674);
+            this.tabPage2.Size = new System.Drawing.Size(872, 593);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "FD Vars";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1486,7 +1492,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(551, 538);
+            this.tabPage3.Size = new System.Drawing.Size(872, 593);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "FD RWR";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1496,17 +1502,21 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(981, 674);
+            this.tabPage4.Size = new System.Drawing.Size(872, 593);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "FD DED/PFL";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.cbBBOuterMarker);
+            this.tabPage5.Controls.Add(this.cbLBOuterMarker);
+            this.tabPage5.Controls.Add(this.label6);
+            this.tabPage5.Controls.Add(this.label5);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(981, 674);
+            this.tabPage5.Size = new System.Drawing.Size(872, 593);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "FD2 Bits";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1516,7 +1526,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(981, 674);
+            this.tabPage6.Size = new System.Drawing.Size(872, 593);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "FD2 Vars";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1526,7 +1536,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(981, 674);
+            this.tabPage7.Size = new System.Drawing.Size(872, 593);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "FD2 RWR/Pilots";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1536,7 +1546,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(981, 674);
+            this.tabPage8.Size = new System.Drawing.Size(872, 593);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "OSB";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1546,7 +1556,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(981, 674);
+            this.tabPage9.Size = new System.Drawing.Size(872, 593);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "iVibe";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -1556,7 +1566,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(981, 674);
+            this.tabPage10.Size = new System.Drawing.Size(872, 593);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "IVC RCS/RCC";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -1566,7 +1576,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(981, 674);
+            this.tabPage11.Size = new System.Drawing.Size(872, 593);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "Strings";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -1576,10 +1586,51 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(981, 674);
+            this.tabPage12.Size = new System.Drawing.Size(872, 593);
             this.tabPage12.TabIndex = 11;
             this.tabPage12.Text = "Raw Bits";
             this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(15, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "(LBs)";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(52, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "BlinkBits";
+            // 
+            // cbLBOuterMarker
+            // 
+            this.cbLBOuterMarker.AutoSize = true;
+            this.cbLBOuterMarker.Enabled = false;
+            this.cbLBOuterMarker.Location = new System.Drawing.Point(31, 41);
+            this.cbLBOuterMarker.Name = "cbLBOuterMarker";
+            this.cbLBOuterMarker.Size = new System.Drawing.Size(15, 14);
+            this.cbLBOuterMarker.TabIndex = 2;
+            this.cbLBOuterMarker.TabStop = false;
+            this.cbLBOuterMarker.UseVisualStyleBackColor = true;
+            // 
+            // cbBBOuterMarker
+            // 
+            this.cbBBOuterMarker.AutoSize = true;
+            this.cbBBOuterMarker.Location = new System.Drawing.Point(58, 40);
+            this.cbBBOuterMarker.Name = "cbBBOuterMarker";
+            this.cbBBOuterMarker.Size = new System.Drawing.Size(85, 17);
+            this.cbBBOuterMarker.TabIndex = 3;
+            this.cbBBOuterMarker.Text = "OuterMarker";
+            this.cbBBOuterMarker.UseVisualStyleBackColor = true;
             // 
             // SharedMemoryForm
             // 
@@ -1596,6 +1647,8 @@
             this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1731,6 +1784,10 @@
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.TabPage tabPage11;
         private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.CheckBox cbBBOuterMarker;
+        private System.Windows.Forms.CheckBox cbLBOuterMarker;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }
 

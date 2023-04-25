@@ -38,6 +38,7 @@ namespace SharedMemoryTester.UI
 
         private void UpdateSample()
         {
+            // Primary FlightData
             BMS4FlightData flightData = new BMS4FlightData();
             flightData.bearing = new float[FlightData.MAX_RWR_OBJECTS];
             flightData.DEDLines = new DED_PFL_LineOfText[5];
@@ -56,18 +57,49 @@ namespace SharedMemoryTester.UI
             flightData.lightBits3 = GetLightBits3();
             flightData.hsiBits = GetHsiBits();
 
-            int size = Marshal.SizeOf(flightData);
-            _sample.PrimaryFlightData = new byte[size];
-            IntPtr ptr = IntPtr.Zero;
-            try
             {
-                ptr = Marshal.AllocHGlobal(size);
-                Marshal.StructureToPtr(flightData, ptr, true);
-                Marshal.Copy(ptr, _sample.PrimaryFlightData, 0, size);
+                int size = Marshal.SizeOf(flightData);
+                _sample.PrimaryFlightData = new byte[size];
+                IntPtr ptr = IntPtr.Zero;
+                try
+                {
+                    ptr = Marshal.AllocHGlobal(size);
+                    Marshal.StructureToPtr(flightData, ptr, true);
+                    Marshal.Copy(ptr, _sample.PrimaryFlightData, 0, size);
+                }
+                finally
+                {
+                    Marshal.FreeHGlobal(ptr);
+                }
             }
-            finally
+
+            // FlightData2
+            FlightData2 flightData2 = new FlightData2();
+            flightData2.ecmBits = new uint[FlightData2.MAX_ECM_PROGRAMS];
+            flightData2.pilotsCallsign = new Callsign_LineOfText[FlightData2.MAX_CALLSIGNS];
+            flightData2.pilotsStatus = new byte[FlightData2.MAX_CALLSIGNS];
+            flightData2.RTT_area = new ushort[(int)RTT_areas.RTT_noOfAreas * 4];
+            flightData2.RTT_size = new ushort[2];
+            flightData2.RwrInfo = new byte[FlightData2.RWRINFO_SIZE];
+            flightData2.RWRjammingStatus = new JammingStates[FlightData.MAX_RWR_OBJECTS];
+            flightData2.tacanInfo = new byte[(int)TacanSources.NUMBER_OF_SOURCES];
+
+            flightData2.blinkBits = GetBlinkBits();
+
             {
-                Marshal.FreeHGlobal(ptr);
+                int size = Marshal.SizeOf(flightData2);
+                _sample.FlightData2 = new byte[size];
+                IntPtr ptr = IntPtr.Zero;
+                try
+                {
+                    ptr = Marshal.AllocHGlobal(size);
+                    Marshal.StructureToPtr(flightData2, ptr, true);
+                    Marshal.Copy(ptr, _sample.FlightData2, 0, size);
+                }
+                finally
+                {
+                    Marshal.FreeHGlobal(ptr);
+                }
             }
 
             WriteSampleToSharedMemory();
@@ -435,6 +467,17 @@ namespace SharedMemoryTester.UI
             return ((uint)hsiBits);
         }
 
+        private uint GetBlinkBits()
+        {
+            BlinkBits blinkBits = new BlinkBits();
+            blinkBits = 0;
+
+            if (cbBBOuterMarker.Checked)
+                blinkBits |= BlinkBits.OuterMarker;
+
+            return (uint)blinkBits;
+        }
+
         private void WriteSampleToSharedMemory()
         {
             if (_sample.PrimaryFlightData != null)
@@ -506,6 +549,12 @@ namespace SharedMemoryTester.UI
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             UpdateSample();
+        }
+
+        // Update BlinkBit Checkmarks
+        private void cbOuterMarker_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBOuterMarker.Checked = cbOuterMarker.Checked;
         }
     }
 }
