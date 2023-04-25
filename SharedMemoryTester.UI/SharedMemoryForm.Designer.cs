@@ -144,13 +144,28 @@
             this.cbMiddleMarker = new System.Windows.Forms.CheckBox();
             this.cbFromTrue = new System.Windows.Forms.CheckBox();
             this.cbFlying = new System.Windows.Forms.CheckBox();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.tabControl.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 0;
@@ -159,7 +174,7 @@
             // cbMasterCaution
             // 
             this.cbMasterCaution.AutoSize = true;
-            this.cbMasterCaution.Location = new System.Drawing.Point(15, 25);
+            this.cbMasterCaution.Location = new System.Drawing.Point(6, 19);
             this.cbMasterCaution.Name = "cbMasterCaution";
             this.cbMasterCaution.Size = new System.Drawing.Size(94, 17);
             this.cbMasterCaution.TabIndex = 1;
@@ -169,7 +184,7 @@
             // cbTF
             // 
             this.cbTF.AutoSize = true;
-            this.cbTF.Location = new System.Drawing.Point(15, 39);
+            this.cbTF.Location = new System.Drawing.Point(6, 35);
             this.cbTF.Name = "cbTF";
             this.cbTF.Size = new System.Drawing.Size(39, 17);
             this.cbTF.TabIndex = 2;
@@ -179,7 +194,7 @@
             // cbOXY_BROW
             // 
             this.cbOXY_BROW.AutoSize = true;
-            this.cbOXY_BROW.Location = new System.Drawing.Point(15, 53);
+            this.cbOXY_BROW.Location = new System.Drawing.Point(6, 51);
             this.cbOXY_BROW.Name = "cbOXY_BROW";
             this.cbOXY_BROW.Size = new System.Drawing.Size(88, 17);
             this.cbOXY_BROW.TabIndex = 3;
@@ -189,7 +204,7 @@
             // cbEQUIP_HOT
             // 
             this.cbEQUIP_HOT.AutoSize = true;
-            this.cbEQUIP_HOT.Location = new System.Drawing.Point(15, 67);
+            this.cbEQUIP_HOT.Location = new System.Drawing.Point(6, 67);
             this.cbEQUIP_HOT.Name = "cbEQUIP_HOT";
             this.cbEQUIP_HOT.Size = new System.Drawing.Size(88, 17);
             this.cbEQUIP_HOT.TabIndex = 4;
@@ -199,7 +214,7 @@
             // cbONGROUND
             // 
             this.cbONGROUND.AutoSize = true;
-            this.cbONGROUND.Location = new System.Drawing.Point(15, 81);
+            this.cbONGROUND.Location = new System.Drawing.Point(6, 83);
             this.cbONGROUND.Name = "cbONGROUND";
             this.cbONGROUND.Size = new System.Drawing.Size(90, 17);
             this.cbONGROUND.TabIndex = 5;
@@ -209,7 +224,7 @@
             // cbENG_FIRE
             // 
             this.cbENG_FIRE.AutoSize = true;
-            this.cbENG_FIRE.Location = new System.Drawing.Point(15, 95);
+            this.cbENG_FIRE.Location = new System.Drawing.Point(6, 99);
             this.cbENG_FIRE.Name = "cbENG_FIRE";
             this.cbENG_FIRE.Size = new System.Drawing.Size(79, 17);
             this.cbENG_FIRE.TabIndex = 6;
@@ -220,7 +235,7 @@
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdate.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnUpdate.Location = new System.Drawing.Point(472, 450);
+            this.btnUpdate.Location = new System.Drawing.Point(797, 626);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 7;
@@ -231,7 +246,7 @@
             // cbCONFIG
             // 
             this.cbCONFIG.AutoSize = true;
-            this.cbCONFIG.Location = new System.Drawing.Point(15, 109);
+            this.cbCONFIG.Location = new System.Drawing.Point(6, 115);
             this.cbCONFIG.Name = "cbCONFIG";
             this.cbCONFIG.Size = new System.Drawing.Size(66, 17);
             this.cbCONFIG.TabIndex = 8;
@@ -241,7 +256,7 @@
             // cbHYD
             // 
             this.cbHYD.AutoSize = true;
-            this.cbHYD.Location = new System.Drawing.Point(15, 123);
+            this.cbHYD.Location = new System.Drawing.Point(6, 131);
             this.cbHYD.Name = "cbHYD";
             this.cbHYD.Size = new System.Drawing.Size(49, 17);
             this.cbHYD.TabIndex = 9;
@@ -251,7 +266,7 @@
             // cbFlcs_ABCD
             // 
             this.cbFlcs_ABCD.AutoSize = true;
-            this.cbFlcs_ABCD.Location = new System.Drawing.Point(15, 137);
+            this.cbFlcs_ABCD.Location = new System.Drawing.Point(6, 147);
             this.cbFlcs_ABCD.Name = "cbFlcs_ABCD";
             this.cbFlcs_ABCD.Size = new System.Drawing.Size(80, 17);
             this.cbFlcs_ABCD.TabIndex = 10;
@@ -261,7 +276,7 @@
             // cbFLCS
             // 
             this.cbFLCS.AutoSize = true;
-            this.cbFLCS.Location = new System.Drawing.Point(15, 151);
+            this.cbFLCS.Location = new System.Drawing.Point(6, 163);
             this.cbFLCS.Name = "cbFLCS";
             this.cbFLCS.Size = new System.Drawing.Size(52, 17);
             this.cbFLCS.TabIndex = 11;
@@ -271,7 +286,7 @@
             // cbCAN
             // 
             this.cbCAN.AutoSize = true;
-            this.cbCAN.Location = new System.Drawing.Point(15, 165);
+            this.cbCAN.Location = new System.Drawing.Point(6, 179);
             this.cbCAN.Name = "cbCAN";
             this.cbCAN.Size = new System.Drawing.Size(48, 17);
             this.cbCAN.TabIndex = 12;
@@ -281,7 +296,7 @@
             // cbT_L_CFG
             // 
             this.cbT_L_CFG.AutoSize = true;
-            this.cbT_L_CFG.Location = new System.Drawing.Point(15, 179);
+            this.cbT_L_CFG.Location = new System.Drawing.Point(6, 195);
             this.cbT_L_CFG.Name = "cbT_L_CFG";
             this.cbT_L_CFG.Size = new System.Drawing.Size(72, 17);
             this.cbT_L_CFG.TabIndex = 13;
@@ -291,7 +306,7 @@
             // cbAOAAbove
             // 
             this.cbAOAAbove.AutoSize = true;
-            this.cbAOAAbove.Location = new System.Drawing.Point(15, 193);
+            this.cbAOAAbove.Location = new System.Drawing.Point(6, 211);
             this.cbAOAAbove.Name = "cbAOAAbove";
             this.cbAOAAbove.Size = new System.Drawing.Size(79, 17);
             this.cbAOAAbove.TabIndex = 14;
@@ -301,7 +316,7 @@
             // cbAOAOn
             // 
             this.cbAOAOn.AutoSize = true;
-            this.cbAOAOn.Location = new System.Drawing.Point(15, 207);
+            this.cbAOAOn.Location = new System.Drawing.Point(6, 227);
             this.cbAOAOn.Name = "cbAOAOn";
             this.cbAOAOn.Size = new System.Drawing.Size(62, 17);
             this.cbAOAOn.TabIndex = 15;
@@ -311,7 +326,7 @@
             // cbAOABelow
             // 
             this.cbAOABelow.AutoSize = true;
-            this.cbAOABelow.Location = new System.Drawing.Point(15, 221);
+            this.cbAOABelow.Location = new System.Drawing.Point(6, 243);
             this.cbAOABelow.Name = "cbAOABelow";
             this.cbAOABelow.Size = new System.Drawing.Size(77, 17);
             this.cbAOABelow.TabIndex = 16;
@@ -321,7 +336,7 @@
             // cbRefuelRDY
             // 
             this.cbRefuelRDY.AutoSize = true;
-            this.cbRefuelRDY.Location = new System.Drawing.Point(15, 235);
+            this.cbRefuelRDY.Location = new System.Drawing.Point(6, 259);
             this.cbRefuelRDY.Name = "cbRefuelRDY";
             this.cbRefuelRDY.Size = new System.Drawing.Size(80, 17);
             this.cbRefuelRDY.TabIndex = 17;
@@ -331,7 +346,7 @@
             // cbRefuelAR
             // 
             this.cbRefuelAR.AutoSize = true;
-            this.cbRefuelAR.Location = new System.Drawing.Point(15, 249);
+            this.cbRefuelAR.Location = new System.Drawing.Point(6, 275);
             this.cbRefuelAR.Name = "cbRefuelAR";
             this.cbRefuelAR.Size = new System.Drawing.Size(72, 17);
             this.cbRefuelAR.TabIndex = 18;
@@ -341,7 +356,7 @@
             // cbRefuelDSC
             // 
             this.cbRefuelDSC.AutoSize = true;
-            this.cbRefuelDSC.Location = new System.Drawing.Point(15, 263);
+            this.cbRefuelDSC.Location = new System.Drawing.Point(6, 291);
             this.cbRefuelDSC.Name = "cbRefuelDSC";
             this.cbRefuelDSC.Size = new System.Drawing.Size(79, 17);
             this.cbRefuelDSC.TabIndex = 19;
@@ -351,7 +366,7 @@
             // cbFltControlSys
             // 
             this.cbFltControlSys.AutoSize = true;
-            this.cbFltControlSys.Location = new System.Drawing.Point(15, 277);
+            this.cbFltControlSys.Location = new System.Drawing.Point(6, 307);
             this.cbFltControlSys.Name = "cbFltControlSys";
             this.cbFltControlSys.Size = new System.Drawing.Size(87, 17);
             this.cbFltControlSys.TabIndex = 20;
@@ -361,7 +376,7 @@
             // cbLEFlaps
             // 
             this.cbLEFlaps.AutoSize = true;
-            this.cbLEFlaps.Location = new System.Drawing.Point(15, 291);
+            this.cbLEFlaps.Location = new System.Drawing.Point(6, 323);
             this.cbLEFlaps.Name = "cbLEFlaps";
             this.cbLEFlaps.Size = new System.Drawing.Size(64, 17);
             this.cbLEFlaps.TabIndex = 21;
@@ -371,7 +386,7 @@
             // cbEngineFault
             // 
             this.cbEngineFault.AutoSize = true;
-            this.cbEngineFault.Location = new System.Drawing.Point(15, 305);
+            this.cbEngineFault.Location = new System.Drawing.Point(6, 339);
             this.cbEngineFault.Name = "cbEngineFault";
             this.cbEngineFault.Size = new System.Drawing.Size(82, 17);
             this.cbEngineFault.TabIndex = 22;
@@ -381,7 +396,7 @@
             // cbOverheat
             // 
             this.cbOverheat.AutoSize = true;
-            this.cbOverheat.Location = new System.Drawing.Point(15, 319);
+            this.cbOverheat.Location = new System.Drawing.Point(6, 355);
             this.cbOverheat.Name = "cbOverheat";
             this.cbOverheat.Size = new System.Drawing.Size(70, 17);
             this.cbOverheat.TabIndex = 23;
@@ -391,7 +406,7 @@
             // cbFuelLow
             // 
             this.cbFuelLow.AutoSize = true;
-            this.cbFuelLow.Location = new System.Drawing.Point(15, 333);
+            this.cbFuelLow.Location = new System.Drawing.Point(6, 371);
             this.cbFuelLow.Name = "cbFuelLow";
             this.cbFuelLow.Size = new System.Drawing.Size(66, 17);
             this.cbFuelLow.TabIndex = 24;
@@ -401,7 +416,7 @@
             // cbAvionics
             // 
             this.cbAvionics.AutoSize = true;
-            this.cbAvionics.Location = new System.Drawing.Point(15, 347);
+            this.cbAvionics.Location = new System.Drawing.Point(6, 387);
             this.cbAvionics.Name = "cbAvionics";
             this.cbAvionics.Size = new System.Drawing.Size(66, 17);
             this.cbAvionics.TabIndex = 25;
@@ -411,7 +426,7 @@
             // cbRadarAlt
             // 
             this.cbRadarAlt.AutoSize = true;
-            this.cbRadarAlt.Location = new System.Drawing.Point(15, 361);
+            this.cbRadarAlt.Location = new System.Drawing.Point(6, 403);
             this.cbRadarAlt.Name = "cbRadarAlt";
             this.cbRadarAlt.Size = new System.Drawing.Size(67, 17);
             this.cbRadarAlt.TabIndex = 26;
@@ -421,7 +436,7 @@
             // cbIFF
             // 
             this.cbIFF.AutoSize = true;
-            this.cbIFF.Location = new System.Drawing.Point(15, 375);
+            this.cbIFF.Location = new System.Drawing.Point(6, 419);
             this.cbIFF.Name = "cbIFF";
             this.cbIFF.Size = new System.Drawing.Size(41, 17);
             this.cbIFF.TabIndex = 27;
@@ -431,7 +446,7 @@
             // cbECM
             // 
             this.cbECM.AutoSize = true;
-            this.cbECM.Location = new System.Drawing.Point(15, 389);
+            this.cbECM.Location = new System.Drawing.Point(6, 435);
             this.cbECM.Name = "cbECM";
             this.cbECM.Size = new System.Drawing.Size(49, 17);
             this.cbECM.TabIndex = 28;
@@ -441,7 +456,7 @@
             // cbHook
             // 
             this.cbHook.AutoSize = true;
-            this.cbHook.Location = new System.Drawing.Point(15, 403);
+            this.cbHook.Location = new System.Drawing.Point(6, 451);
             this.cbHook.Name = "cbHook";
             this.cbHook.Size = new System.Drawing.Size(52, 17);
             this.cbHook.TabIndex = 29;
@@ -451,7 +466,7 @@
             // cbNWSFail
             // 
             this.cbNWSFail.AutoSize = true;
-            this.cbNWSFail.Location = new System.Drawing.Point(15, 417);
+            this.cbNWSFail.Location = new System.Drawing.Point(6, 467);
             this.cbNWSFail.Name = "cbNWSFail";
             this.cbNWSFail.Size = new System.Drawing.Size(68, 17);
             this.cbNWSFail.TabIndex = 30;
@@ -461,7 +476,7 @@
             // cbCabinPress
             // 
             this.cbCabinPress.AutoSize = true;
-            this.cbCabinPress.Location = new System.Drawing.Point(15, 431);
+            this.cbCabinPress.Location = new System.Drawing.Point(6, 483);
             this.cbCabinPress.Name = "cbCabinPress";
             this.cbCabinPress.Size = new System.Drawing.Size(79, 17);
             this.cbCabinPress.TabIndex = 31;
@@ -471,7 +486,7 @@
             // cbAutoPilotOn
             // 
             this.cbAutoPilotOn.AutoSize = true;
-            this.cbAutoPilotOn.Location = new System.Drawing.Point(15, 445);
+            this.cbAutoPilotOn.Location = new System.Drawing.Point(6, 499);
             this.cbAutoPilotOn.Name = "cbAutoPilotOn";
             this.cbAutoPilotOn.Size = new System.Drawing.Size(82, 17);
             this.cbAutoPilotOn.TabIndex = 32;
@@ -481,7 +496,7 @@
             // cbTFR_STBY
             // 
             this.cbTFR_STBY.AutoSize = true;
-            this.cbTFR_STBY.Location = new System.Drawing.Point(15, 459);
+            this.cbTFR_STBY.Location = new System.Drawing.Point(6, 515);
             this.cbTFR_STBY.Name = "cbTFR_STBY";
             this.cbTFR_STBY.Size = new System.Drawing.Size(81, 17);
             this.cbTFR_STBY.TabIndex = 33;
@@ -492,7 +507,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(152, 9);
+            this.label2.Location = new System.Drawing.Point(143, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 34;
@@ -501,7 +516,7 @@
             // cbHandOff
             // 
             this.cbHandOff.AutoSize = true;
-            this.cbHandOff.Location = new System.Drawing.Point(155, 25);
+            this.cbHandOff.Location = new System.Drawing.Point(146, 19);
             this.cbHandOff.Name = "cbHandOff";
             this.cbHandOff.Size = new System.Drawing.Size(66, 17);
             this.cbHandOff.TabIndex = 35;
@@ -511,7 +526,7 @@
             // cbLaunch
             // 
             this.cbLaunch.AutoSize = true;
-            this.cbLaunch.Location = new System.Drawing.Point(155, 39);
+            this.cbLaunch.Location = new System.Drawing.Point(146, 35);
             this.cbLaunch.Name = "cbLaunch";
             this.cbLaunch.Size = new System.Drawing.Size(62, 17);
             this.cbLaunch.TabIndex = 36;
@@ -521,7 +536,7 @@
             // cbNaval
             // 
             this.cbNaval.AutoSize = true;
-            this.cbNaval.Location = new System.Drawing.Point(155, 67);
+            this.cbNaval.Location = new System.Drawing.Point(146, 66);
             this.cbNaval.Name = "cbNaval";
             this.cbNaval.Size = new System.Drawing.Size(54, 17);
             this.cbNaval.TabIndex = 37;
@@ -531,7 +546,7 @@
             // cbPriMode
             // 
             this.cbPriMode.AutoSize = true;
-            this.cbPriMode.Location = new System.Drawing.Point(155, 53);
+            this.cbPriMode.Location = new System.Drawing.Point(146, 51);
             this.cbPriMode.Name = "cbPriMode";
             this.cbPriMode.Size = new System.Drawing.Size(65, 17);
             this.cbPriMode.TabIndex = 38;
@@ -541,7 +556,7 @@
             // cbUnk
             // 
             this.cbUnk.AutoSize = true;
-            this.cbUnk.Location = new System.Drawing.Point(155, 81);
+            this.cbUnk.Location = new System.Drawing.Point(146, 82);
             this.cbUnk.Name = "cbUnk";
             this.cbUnk.Size = new System.Drawing.Size(46, 17);
             this.cbUnk.TabIndex = 39;
@@ -551,7 +566,7 @@
             // cbTgtSep
             // 
             this.cbTgtSep.AutoSize = true;
-            this.cbTgtSep.Location = new System.Drawing.Point(155, 95);
+            this.cbTgtSep.Location = new System.Drawing.Point(146, 98);
             this.cbTgtSep.Name = "cbTgtSep";
             this.cbTgtSep.Size = new System.Drawing.Size(61, 17);
             this.cbTgtSep.TabIndex = 40;
@@ -561,7 +576,7 @@
             // cbGo
             // 
             this.cbGo.AutoSize = true;
-            this.cbGo.Location = new System.Drawing.Point(155, 109);
+            this.cbGo.Location = new System.Drawing.Point(146, 114);
             this.cbGo.Name = "cbGo";
             this.cbGo.Size = new System.Drawing.Size(40, 17);
             this.cbGo.TabIndex = 41;
@@ -571,7 +586,7 @@
             // cbNoGo
             // 
             this.cbNoGo.AutoSize = true;
-            this.cbNoGo.Location = new System.Drawing.Point(155, 123);
+            this.cbNoGo.Location = new System.Drawing.Point(146, 130);
             this.cbNoGo.Name = "cbNoGo";
             this.cbNoGo.Size = new System.Drawing.Size(54, 17);
             this.cbNoGo.TabIndex = 42;
@@ -581,7 +596,7 @@
             // cbDegr
             // 
             this.cbDegr.AutoSize = true;
-            this.cbDegr.Location = new System.Drawing.Point(155, 137);
+            this.cbDegr.Location = new System.Drawing.Point(146, 146);
             this.cbDegr.Name = "cbDegr";
             this.cbDegr.Size = new System.Drawing.Size(49, 17);
             this.cbDegr.TabIndex = 43;
@@ -591,7 +606,7 @@
             // cbRdy
             // 
             this.cbRdy.AutoSize = true;
-            this.cbRdy.Location = new System.Drawing.Point(155, 151);
+            this.cbRdy.Location = new System.Drawing.Point(146, 162);
             this.cbRdy.Name = "cbRdy";
             this.cbRdy.Size = new System.Drawing.Size(45, 17);
             this.cbRdy.TabIndex = 44;
@@ -601,7 +616,7 @@
             // cbChaffLo
             // 
             this.cbChaffLo.AutoSize = true;
-            this.cbChaffLo.Location = new System.Drawing.Point(155, 165);
+            this.cbChaffLo.Location = new System.Drawing.Point(146, 178);
             this.cbChaffLo.Name = "cbChaffLo";
             this.cbChaffLo.Size = new System.Drawing.Size(63, 17);
             this.cbChaffLo.TabIndex = 45;
@@ -611,7 +626,7 @@
             // cbFlareLo
             // 
             this.cbFlareLo.AutoSize = true;
-            this.cbFlareLo.Location = new System.Drawing.Point(155, 179);
+            this.cbFlareLo.Location = new System.Drawing.Point(146, 194);
             this.cbFlareLo.Name = "cbFlareLo";
             this.cbFlareLo.Size = new System.Drawing.Size(61, 17);
             this.cbFlareLo.TabIndex = 46;
@@ -621,7 +636,7 @@
             // cbAuxSrch
             // 
             this.cbAuxSrch.AutoSize = true;
-            this.cbAuxSrch.Location = new System.Drawing.Point(155, 193);
+            this.cbAuxSrch.Location = new System.Drawing.Point(146, 210);
             this.cbAuxSrch.Name = "cbAuxSrch";
             this.cbAuxSrch.Size = new System.Drawing.Size(66, 17);
             this.cbAuxSrch.TabIndex = 47;
@@ -631,7 +646,7 @@
             // cbAuxAct
             // 
             this.cbAuxAct.AutoSize = true;
-            this.cbAuxAct.Location = new System.Drawing.Point(155, 207);
+            this.cbAuxAct.Location = new System.Drawing.Point(146, 226);
             this.cbAuxAct.Name = "cbAuxAct";
             this.cbAuxAct.Size = new System.Drawing.Size(60, 17);
             this.cbAuxAct.TabIndex = 48;
@@ -641,7 +656,7 @@
             // cbAuxLow
             // 
             this.cbAuxLow.AutoSize = true;
-            this.cbAuxLow.Location = new System.Drawing.Point(155, 221);
+            this.cbAuxLow.Location = new System.Drawing.Point(146, 242);
             this.cbAuxLow.Name = "cbAuxLow";
             this.cbAuxLow.Size = new System.Drawing.Size(64, 17);
             this.cbAuxLow.TabIndex = 49;
@@ -651,7 +666,7 @@
             // cbAuxPwr
             // 
             this.cbAuxPwr.AutoSize = true;
-            this.cbAuxPwr.Location = new System.Drawing.Point(155, 235);
+            this.cbAuxPwr.Location = new System.Drawing.Point(146, 258);
             this.cbAuxPwr.Name = "cbAuxPwr";
             this.cbAuxPwr.Size = new System.Drawing.Size(62, 17);
             this.cbAuxPwr.TabIndex = 50;
@@ -661,7 +676,7 @@
             // cbEcmPwr
             // 
             this.cbEcmPwr.AutoSize = true;
-            this.cbEcmPwr.Location = new System.Drawing.Point(155, 249);
+            this.cbEcmPwr.Location = new System.Drawing.Point(146, 274);
             this.cbEcmPwr.Name = "cbEcmPwr";
             this.cbEcmPwr.Size = new System.Drawing.Size(65, 17);
             this.cbEcmPwr.TabIndex = 51;
@@ -671,7 +686,7 @@
             // cbEcmFail
             // 
             this.cbEcmFail.AutoSize = true;
-            this.cbEcmFail.Location = new System.Drawing.Point(155, 263);
+            this.cbEcmFail.Location = new System.Drawing.Point(146, 290);
             this.cbEcmFail.Name = "cbEcmFail";
             this.cbEcmFail.Size = new System.Drawing.Size(63, 17);
             this.cbEcmFail.TabIndex = 52;
@@ -681,7 +696,7 @@
             // cbFwdFuelLow
             // 
             this.cbFwdFuelLow.AutoSize = true;
-            this.cbFwdFuelLow.Location = new System.Drawing.Point(155, 277);
+            this.cbFwdFuelLow.Location = new System.Drawing.Point(146, 306);
             this.cbFwdFuelLow.Name = "cbFwdFuelLow";
             this.cbFwdFuelLow.Size = new System.Drawing.Size(86, 17);
             this.cbFwdFuelLow.TabIndex = 53;
@@ -691,7 +706,7 @@
             // cbAftFuelLow
             // 
             this.cbAftFuelLow.AutoSize = true;
-            this.cbAftFuelLow.Location = new System.Drawing.Point(155, 291);
+            this.cbAftFuelLow.Location = new System.Drawing.Point(146, 322);
             this.cbAftFuelLow.Name = "cbAftFuelLow";
             this.cbAftFuelLow.Size = new System.Drawing.Size(79, 17);
             this.cbAftFuelLow.TabIndex = 54;
@@ -701,7 +716,7 @@
             // cbEPUOn
             // 
             this.cbEPUOn.AutoSize = true;
-            this.cbEPUOn.Location = new System.Drawing.Point(155, 305);
+            this.cbEPUOn.Location = new System.Drawing.Point(146, 338);
             this.cbEPUOn.Name = "cbEPUOn";
             this.cbEPUOn.Size = new System.Drawing.Size(62, 17);
             this.cbEPUOn.TabIndex = 55;
@@ -711,7 +726,7 @@
             // cbJFSOn
             // 
             this.cbJFSOn.AutoSize = true;
-            this.cbJFSOn.Location = new System.Drawing.Point(155, 319);
+            this.cbJFSOn.Location = new System.Drawing.Point(146, 354);
             this.cbJFSOn.Name = "cbJFSOn";
             this.cbJFSOn.Size = new System.Drawing.Size(58, 17);
             this.cbJFSOn.TabIndex = 56;
@@ -721,7 +736,7 @@
             // cbSEC
             // 
             this.cbSEC.AutoSize = true;
-            this.cbSEC.Location = new System.Drawing.Point(155, 333);
+            this.cbSEC.Location = new System.Drawing.Point(146, 370);
             this.cbSEC.Name = "cbSEC";
             this.cbSEC.Size = new System.Drawing.Size(47, 17);
             this.cbSEC.TabIndex = 57;
@@ -731,7 +746,7 @@
             // cbOXY_LOW
             // 
             this.cbOXY_LOW.AutoSize = true;
-            this.cbOXY_LOW.Location = new System.Drawing.Point(155, 347);
+            this.cbOXY_LOW.Location = new System.Drawing.Point(146, 386);
             this.cbOXY_LOW.Name = "cbOXY_LOW";
             this.cbOXY_LOW.Size = new System.Drawing.Size(79, 17);
             this.cbOXY_LOW.TabIndex = 58;
@@ -741,7 +756,7 @@
             // cbPROBEHEAT
             // 
             this.cbPROBEHEAT.AutoSize = true;
-            this.cbPROBEHEAT.Location = new System.Drawing.Point(155, 361);
+            this.cbPROBEHEAT.Location = new System.Drawing.Point(146, 401);
             this.cbPROBEHEAT.Name = "cbPROBEHEAT";
             this.cbPROBEHEAT.Size = new System.Drawing.Size(92, 17);
             this.cbPROBEHEAT.TabIndex = 59;
@@ -751,7 +766,7 @@
             // cbSEAT_ARM
             // 
             this.cbSEAT_ARM.AutoSize = true;
-            this.cbSEAT_ARM.Location = new System.Drawing.Point(155, 375);
+            this.cbSEAT_ARM.Location = new System.Drawing.Point(146, 417);
             this.cbSEAT_ARM.Name = "cbSEAT_ARM";
             this.cbSEAT_ARM.Size = new System.Drawing.Size(84, 17);
             this.cbSEAT_ARM.TabIndex = 60;
@@ -761,7 +776,7 @@
             // cbBUC
             // 
             this.cbBUC.AutoSize = true;
-            this.cbBUC.Location = new System.Drawing.Point(155, 389);
+            this.cbBUC.Location = new System.Drawing.Point(146, 432);
             this.cbBUC.Name = "cbBUC";
             this.cbBUC.Size = new System.Drawing.Size(48, 17);
             this.cbBUC.TabIndex = 61;
@@ -771,7 +786,7 @@
             // cbFUEL_OIL_HOT
             // 
             this.cbFUEL_OIL_HOT.AutoSize = true;
-            this.cbFUEL_OIL_HOT.Location = new System.Drawing.Point(155, 403);
+            this.cbFUEL_OIL_HOT.Location = new System.Drawing.Point(146, 447);
             this.cbFUEL_OIL_HOT.Name = "cbFUEL_OIL_HOT";
             this.cbFUEL_OIL_HOT.Size = new System.Drawing.Size(105, 17);
             this.cbFUEL_OIL_HOT.TabIndex = 62;
@@ -781,7 +796,7 @@
             // cbANTI_SKID
             // 
             this.cbANTI_SKID.AutoSize = true;
-            this.cbANTI_SKID.Location = new System.Drawing.Point(155, 417);
+            this.cbANTI_SKID.Location = new System.Drawing.Point(146, 462);
             this.cbANTI_SKID.Name = "cbANTI_SKID";
             this.cbANTI_SKID.Size = new System.Drawing.Size(82, 17);
             this.cbANTI_SKID.TabIndex = 63;
@@ -791,7 +806,7 @@
             // cbTFR_ENGAGED
             // 
             this.cbTFR_ENGAGED.AutoSize = true;
-            this.cbTFR_ENGAGED.Location = new System.Drawing.Point(155, 431);
+            this.cbTFR_ENGAGED.Location = new System.Drawing.Point(146, 477);
             this.cbTFR_ENGAGED.Name = "cbTFR_ENGAGED";
             this.cbTFR_ENGAGED.Size = new System.Drawing.Size(106, 17);
             this.cbTFR_ENGAGED.TabIndex = 64;
@@ -801,7 +816,7 @@
             // cbGEARHANDLE
             // 
             this.cbGEARHANDLE.AutoSize = true;
-            this.cbGEARHANDLE.Location = new System.Drawing.Point(155, 445);
+            this.cbGEARHANDLE.Location = new System.Drawing.Point(146, 492);
             this.cbGEARHANDLE.Name = "cbGEARHANDLE";
             this.cbGEARHANDLE.Size = new System.Drawing.Size(100, 17);
             this.cbGEARHANDLE.TabIndex = 65;
@@ -811,7 +826,7 @@
             // cbENGINE
             // 
             this.cbENGINE.AutoSize = true;
-            this.cbENGINE.Location = new System.Drawing.Point(155, 459);
+            this.cbENGINE.Location = new System.Drawing.Point(146, 507);
             this.cbENGINE.Name = "cbENGINE";
             this.cbENGINE.Size = new System.Drawing.Size(67, 17);
             this.cbENGINE.TabIndex = 66;
@@ -822,7 +837,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(292, 9);
+            this.label3.Location = new System.Drawing.Point(283, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 67;
@@ -831,7 +846,7 @@
             // cbFlcsPmg
             // 
             this.cbFlcsPmg.AutoSize = true;
-            this.cbFlcsPmg.Location = new System.Drawing.Point(295, 25);
+            this.cbFlcsPmg.Location = new System.Drawing.Point(286, 19);
             this.cbFlcsPmg.Name = "cbFlcsPmg";
             this.cbFlcsPmg.Size = new System.Drawing.Size(66, 17);
             this.cbFlcsPmg.TabIndex = 68;
@@ -841,7 +856,7 @@
             // cbMainGen
             // 
             this.cbMainGen.AutoSize = true;
-            this.cbMainGen.Location = new System.Drawing.Point(295, 39);
+            this.cbMainGen.Location = new System.Drawing.Point(286, 33);
             this.cbMainGen.Name = "cbMainGen";
             this.cbMainGen.Size = new System.Drawing.Size(69, 17);
             this.cbMainGen.TabIndex = 69;
@@ -851,7 +866,7 @@
             // cbStbyGen
             // 
             this.cbStbyGen.AutoSize = true;
-            this.cbStbyGen.Location = new System.Drawing.Point(295, 53);
+            this.cbStbyGen.Location = new System.Drawing.Point(286, 47);
             this.cbStbyGen.Name = "cbStbyGen";
             this.cbStbyGen.Size = new System.Drawing.Size(67, 17);
             this.cbStbyGen.TabIndex = 70;
@@ -861,7 +876,7 @@
             // cbEpuGen
             // 
             this.cbEpuGen.AutoSize = true;
-            this.cbEpuGen.Location = new System.Drawing.Point(295, 67);
+            this.cbEpuGen.Location = new System.Drawing.Point(286, 61);
             this.cbEpuGen.Name = "cbEpuGen";
             this.cbEpuGen.Size = new System.Drawing.Size(65, 17);
             this.cbEpuGen.TabIndex = 71;
@@ -871,7 +886,7 @@
             // cbEpuPmg
             // 
             this.cbEpuPmg.AutoSize = true;
-            this.cbEpuPmg.Location = new System.Drawing.Point(295, 81);
+            this.cbEpuPmg.Location = new System.Drawing.Point(286, 75);
             this.cbEpuPmg.Name = "cbEpuPmg";
             this.cbEpuPmg.Size = new System.Drawing.Size(66, 17);
             this.cbEpuPmg.TabIndex = 72;
@@ -881,7 +896,7 @@
             // cbToFlcs
             // 
             this.cbToFlcs.AutoSize = true;
-            this.cbToFlcs.Location = new System.Drawing.Point(295, 95);
+            this.cbToFlcs.Location = new System.Drawing.Point(286, 89);
             this.cbToFlcs.Name = "cbToFlcs";
             this.cbToFlcs.Size = new System.Drawing.Size(58, 17);
             this.cbToFlcs.TabIndex = 73;
@@ -891,7 +906,7 @@
             // cbFlcsRly
             // 
             this.cbFlcsRly.AutoSize = true;
-            this.cbFlcsRly.Location = new System.Drawing.Point(295, 109);
+            this.cbFlcsRly.Location = new System.Drawing.Point(286, 103);
             this.cbFlcsRly.Name = "cbFlcsRly";
             this.cbFlcsRly.Size = new System.Drawing.Size(60, 17);
             this.cbFlcsRly.TabIndex = 74;
@@ -901,7 +916,7 @@
             // cbBatFail
             // 
             this.cbBatFail.AutoSize = true;
-            this.cbBatFail.Location = new System.Drawing.Point(295, 123);
+            this.cbBatFail.Location = new System.Drawing.Point(286, 117);
             this.cbBatFail.Name = "cbBatFail";
             this.cbBatFail.Size = new System.Drawing.Size(58, 17);
             this.cbBatFail.TabIndex = 75;
@@ -911,7 +926,7 @@
             // cbHydrazine
             // 
             this.cbHydrazine.AutoSize = true;
-            this.cbHydrazine.Location = new System.Drawing.Point(295, 137);
+            this.cbHydrazine.Location = new System.Drawing.Point(286, 131);
             this.cbHydrazine.Name = "cbHydrazine";
             this.cbHydrazine.Size = new System.Drawing.Size(73, 17);
             this.cbHydrazine.TabIndex = 76;
@@ -921,7 +936,7 @@
             // cbAir
             // 
             this.cbAir.AutoSize = true;
-            this.cbAir.Location = new System.Drawing.Point(295, 151);
+            this.cbAir.Location = new System.Drawing.Point(286, 145);
             this.cbAir.Name = "cbAir";
             this.cbAir.Size = new System.Drawing.Size(38, 17);
             this.cbAir.TabIndex = 77;
@@ -931,7 +946,7 @@
             // cbElec_Fault
             // 
             this.cbElec_Fault.AutoSize = true;
-            this.cbElec_Fault.Location = new System.Drawing.Point(295, 165);
+            this.cbElec_Fault.Location = new System.Drawing.Point(286, 159);
             this.cbElec_Fault.Name = "cbElec_Fault";
             this.cbElec_Fault.Size = new System.Drawing.Size(76, 17);
             this.cbElec_Fault.TabIndex = 78;
@@ -941,7 +956,7 @@
             // cbLef_Fault
             // 
             this.cbLef_Fault.AutoSize = true;
-            this.cbLef_Fault.Location = new System.Drawing.Point(295, 179);
+            this.cbLef_Fault.Location = new System.Drawing.Point(286, 173);
             this.cbLef_Fault.Name = "cbLef_Fault";
             this.cbLef_Fault.Size = new System.Drawing.Size(70, 17);
             this.cbLef_Fault.TabIndex = 79;
@@ -951,7 +966,7 @@
             // cbOnGround2
             // 
             this.cbOnGround2.AutoSize = true;
-            this.cbOnGround2.Location = new System.Drawing.Point(295, 193);
+            this.cbOnGround2.Location = new System.Drawing.Point(286, 187);
             this.cbOnGround2.Name = "cbOnGround2";
             this.cbOnGround2.Size = new System.Drawing.Size(75, 17);
             this.cbOnGround2.TabIndex = 80;
@@ -961,7 +976,7 @@
             // cbFlcsBitRun
             // 
             this.cbFlcsBitRun.AutoSize = true;
-            this.cbFlcsBitRun.Location = new System.Drawing.Point(295, 207);
+            this.cbFlcsBitRun.Location = new System.Drawing.Point(286, 201);
             this.cbFlcsBitRun.Name = "cbFlcsBitRun";
             this.cbFlcsBitRun.Size = new System.Drawing.Size(77, 17);
             this.cbFlcsBitRun.TabIndex = 81;
@@ -971,7 +986,7 @@
             // cbFlcsBitFail
             // 
             this.cbFlcsBitFail.AutoSize = true;
-            this.cbFlcsBitFail.Location = new System.Drawing.Point(295, 221);
+            this.cbFlcsBitFail.Location = new System.Drawing.Point(286, 215);
             this.cbFlcsBitFail.Name = "cbFlcsBitFail";
             this.cbFlcsBitFail.Size = new System.Drawing.Size(73, 17);
             this.cbFlcsBitFail.TabIndex = 82;
@@ -981,7 +996,7 @@
             // cbDbuWarn
             // 
             this.cbDbuWarn.AutoSize = true;
-            this.cbDbuWarn.Location = new System.Drawing.Point(295, 235);
+            this.cbDbuWarn.Location = new System.Drawing.Point(286, 229);
             this.cbDbuWarn.Name = "cbDbuWarn";
             this.cbDbuWarn.Size = new System.Drawing.Size(72, 17);
             this.cbDbuWarn.TabIndex = 83;
@@ -991,7 +1006,7 @@
             // cbNoseGearDown
             // 
             this.cbNoseGearDown.AutoSize = true;
-            this.cbNoseGearDown.Location = new System.Drawing.Point(295, 249);
+            this.cbNoseGearDown.Location = new System.Drawing.Point(286, 243);
             this.cbNoseGearDown.Name = "cbNoseGearDown";
             this.cbNoseGearDown.Size = new System.Drawing.Size(102, 17);
             this.cbNoseGearDown.TabIndex = 84;
@@ -1001,7 +1016,7 @@
             // cbLeftGearDown
             // 
             this.cbLeftGearDown.AutoSize = true;
-            this.cbLeftGearDown.Location = new System.Drawing.Point(295, 263);
+            this.cbLeftGearDown.Location = new System.Drawing.Point(286, 257);
             this.cbLeftGearDown.Name = "cbLeftGearDown";
             this.cbLeftGearDown.Size = new System.Drawing.Size(95, 17);
             this.cbLeftGearDown.TabIndex = 85;
@@ -1011,7 +1026,7 @@
             // cbRightGearDown
             // 
             this.cbRightGearDown.AutoSize = true;
-            this.cbRightGearDown.Location = new System.Drawing.Point(295, 277);
+            this.cbRightGearDown.Location = new System.Drawing.Point(286, 271);
             this.cbRightGearDown.Name = "cbRightGearDown";
             this.cbRightGearDown.Size = new System.Drawing.Size(102, 17);
             this.cbRightGearDown.TabIndex = 86;
@@ -1021,7 +1036,7 @@
             // cbParkBrakeOn
             // 
             this.cbParkBrakeOn.AutoSize = true;
-            this.cbParkBrakeOn.Location = new System.Drawing.Point(295, 291);
+            this.cbParkBrakeOn.Location = new System.Drawing.Point(286, 285);
             this.cbParkBrakeOn.Name = "cbParkBrakeOn";
             this.cbParkBrakeOn.Size = new System.Drawing.Size(90, 17);
             this.cbParkBrakeOn.TabIndex = 87;
@@ -1031,7 +1046,7 @@
             // cbPower_Off
             // 
             this.cbPower_Off.AutoSize = true;
-            this.cbPower_Off.Location = new System.Drawing.Point(295, 305);
+            this.cbPower_Off.Location = new System.Drawing.Point(286, 299);
             this.cbPower_Off.Name = "cbPower_Off";
             this.cbPower_Off.Size = new System.Drawing.Size(76, 17);
             this.cbPower_Off.TabIndex = 88;
@@ -1041,7 +1056,7 @@
             // cbcadc
             // 
             this.cbcadc.AutoSize = true;
-            this.cbcadc.Location = new System.Drawing.Point(295, 319);
+            this.cbcadc.Location = new System.Drawing.Point(286, 313);
             this.cbcadc.Name = "cbcadc";
             this.cbcadc.Size = new System.Drawing.Size(50, 17);
             this.cbcadc.TabIndex = 89;
@@ -1051,7 +1066,7 @@
             // cbSpeedBrake
             // 
             this.cbSpeedBrake.AutoSize = true;
-            this.cbSpeedBrake.Location = new System.Drawing.Point(295, 333);
+            this.cbSpeedBrake.Location = new System.Drawing.Point(286, 327);
             this.cbSpeedBrake.Name = "cbSpeedBrake";
             this.cbSpeedBrake.Size = new System.Drawing.Size(85, 17);
             this.cbSpeedBrake.TabIndex = 90;
@@ -1061,7 +1076,7 @@
             // cbSysTest
             // 
             this.cbSysTest.AutoSize = true;
-            this.cbSysTest.Location = new System.Drawing.Point(295, 347);
+            this.cbSysTest.Location = new System.Drawing.Point(286, 341);
             this.cbSysTest.Name = "cbSysTest";
             this.cbSysTest.Size = new System.Drawing.Size(64, 17);
             this.cbSysTest.TabIndex = 91;
@@ -1071,7 +1086,7 @@
             // cbMCAnnounced
             // 
             this.cbMCAnnounced.AutoSize = true;
-            this.cbMCAnnounced.Location = new System.Drawing.Point(295, 361);
+            this.cbMCAnnounced.Location = new System.Drawing.Point(286, 355);
             this.cbMCAnnounced.Name = "cbMCAnnounced";
             this.cbMCAnnounced.Size = new System.Drawing.Size(97, 17);
             this.cbMCAnnounced.TabIndex = 92;
@@ -1081,7 +1096,7 @@
             // cbMLGWOW
             // 
             this.cbMLGWOW.AutoSize = true;
-            this.cbMLGWOW.Location = new System.Drawing.Point(295, 375);
+            this.cbMLGWOW.Location = new System.Drawing.Point(286, 369);
             this.cbMLGWOW.Name = "cbMLGWOW";
             this.cbMLGWOW.Size = new System.Drawing.Size(79, 17);
             this.cbMLGWOW.TabIndex = 93;
@@ -1091,7 +1106,7 @@
             // cbNLGWOW
             // 
             this.cbNLGWOW.AutoSize = true;
-            this.cbNLGWOW.Location = new System.Drawing.Point(295, 389);
+            this.cbNLGWOW.Location = new System.Drawing.Point(286, 383);
             this.cbNLGWOW.Name = "cbNLGWOW";
             this.cbNLGWOW.Size = new System.Drawing.Size(78, 17);
             this.cbNLGWOW.TabIndex = 94;
@@ -1101,7 +1116,7 @@
             // cbATF_Not_Engaged
             // 
             this.cbATF_Not_Engaged.AutoSize = true;
-            this.cbATF_Not_Engaged.Location = new System.Drawing.Point(295, 403);
+            this.cbATF_Not_Engaged.Location = new System.Drawing.Point(286, 397);
             this.cbATF_Not_Engaged.Name = "cbATF_Not_Engaged";
             this.cbATF_Not_Engaged.Size = new System.Drawing.Size(118, 17);
             this.cbATF_Not_Engaged.TabIndex = 95;
@@ -1111,7 +1126,7 @@
             // cbInlet_Icing
             // 
             this.cbInlet_Icing.AutoSize = true;
-            this.cbInlet_Icing.Location = new System.Drawing.Point(295, 417);
+            this.cbInlet_Icing.Location = new System.Drawing.Point(286, 411);
             this.cbInlet_Icing.Name = "cbInlet_Icing";
             this.cbInlet_Icing.Size = new System.Drawing.Size(75, 17);
             this.cbInlet_Icing.TabIndex = 96;
@@ -1122,7 +1137,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(432, 9);
+            this.label4.Location = new System.Drawing.Point(423, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 97;
@@ -1131,7 +1146,7 @@
             // cbToTrue
             // 
             this.cbToTrue.AutoSize = true;
-            this.cbToTrue.Location = new System.Drawing.Point(435, 25);
+            this.cbToTrue.Location = new System.Drawing.Point(426, 19);
             this.cbToTrue.Name = "cbToTrue";
             this.cbToTrue.Size = new System.Drawing.Size(61, 17);
             this.cbToTrue.TabIndex = 98;
@@ -1141,7 +1156,7 @@
             // cbIlsWarning
             // 
             this.cbIlsWarning.AutoSize = true;
-            this.cbIlsWarning.Location = new System.Drawing.Point(435, 39);
+            this.cbIlsWarning.Location = new System.Drawing.Point(426, 33);
             this.cbIlsWarning.Name = "cbIlsWarning";
             this.cbIlsWarning.Size = new System.Drawing.Size(76, 17);
             this.cbIlsWarning.TabIndex = 99;
@@ -1151,7 +1166,7 @@
             // cbCourseWarning
             // 
             this.cbCourseWarning.AutoSize = true;
-            this.cbCourseWarning.Location = new System.Drawing.Point(435, 53);
+            this.cbCourseWarning.Location = new System.Drawing.Point(426, 47);
             this.cbCourseWarning.Name = "cbCourseWarning";
             this.cbCourseWarning.Size = new System.Drawing.Size(99, 17);
             this.cbCourseWarning.TabIndex = 100;
@@ -1161,7 +1176,7 @@
             // cbInit
             // 
             this.cbInit.AutoSize = true;
-            this.cbInit.Location = new System.Drawing.Point(435, 67);
+            this.cbInit.Location = new System.Drawing.Point(426, 61);
             this.cbInit.Name = "cbInit";
             this.cbInit.Size = new System.Drawing.Size(40, 17);
             this.cbInit.TabIndex = 101;
@@ -1171,7 +1186,7 @@
             // cbTotalFlags
             // 
             this.cbTotalFlags.AutoSize = true;
-            this.cbTotalFlags.Location = new System.Drawing.Point(435, 81);
+            this.cbTotalFlags.Location = new System.Drawing.Point(426, 75);
             this.cbTotalFlags.Name = "cbTotalFlags";
             this.cbTotalFlags.Size = new System.Drawing.Size(75, 17);
             this.cbTotalFlags.TabIndex = 102;
@@ -1181,7 +1196,7 @@
             // cbADI_OFF
             // 
             this.cbADI_OFF.AutoSize = true;
-            this.cbADI_OFF.Location = new System.Drawing.Point(435, 95);
+            this.cbADI_OFF.Location = new System.Drawing.Point(426, 89);
             this.cbADI_OFF.Name = "cbADI_OFF";
             this.cbADI_OFF.Size = new System.Drawing.Size(70, 17);
             this.cbADI_OFF.TabIndex = 103;
@@ -1191,7 +1206,7 @@
             // cbADI_AUX
             // 
             this.cbADI_AUX.AutoSize = true;
-            this.cbADI_AUX.Location = new System.Drawing.Point(435, 109);
+            this.cbADI_AUX.Location = new System.Drawing.Point(426, 103);
             this.cbADI_AUX.Name = "cbADI_AUX";
             this.cbADI_AUX.Size = new System.Drawing.Size(72, 17);
             this.cbADI_AUX.TabIndex = 104;
@@ -1201,7 +1216,7 @@
             // cbADI_GS
             // 
             this.cbADI_GS.AutoSize = true;
-            this.cbADI_GS.Location = new System.Drawing.Point(435, 123);
+            this.cbADI_GS.Location = new System.Drawing.Point(426, 117);
             this.cbADI_GS.Name = "cbADI_GS";
             this.cbADI_GS.Size = new System.Drawing.Size(65, 17);
             this.cbADI_GS.TabIndex = 105;
@@ -1211,7 +1226,7 @@
             // cbADI_LOC
             // 
             this.cbADI_LOC.AutoSize = true;
-            this.cbADI_LOC.Location = new System.Drawing.Point(435, 137);
+            this.cbADI_LOC.Location = new System.Drawing.Point(426, 131);
             this.cbADI_LOC.Name = "cbADI_LOC";
             this.cbADI_LOC.Size = new System.Drawing.Size(71, 17);
             this.cbADI_LOC.TabIndex = 106;
@@ -1221,7 +1236,7 @@
             // cbHSI_OFF
             // 
             this.cbHSI_OFF.AutoSize = true;
-            this.cbHSI_OFF.Location = new System.Drawing.Point(435, 151);
+            this.cbHSI_OFF.Location = new System.Drawing.Point(426, 145);
             this.cbHSI_OFF.Name = "cbHSI_OFF";
             this.cbHSI_OFF.Size = new System.Drawing.Size(70, 17);
             this.cbHSI_OFF.TabIndex = 107;
@@ -1231,7 +1246,7 @@
             // cbBUP_ADI_OFF
             // 
             this.cbBUP_ADI_OFF.AutoSize = true;
-            this.cbBUP_ADI_OFF.Location = new System.Drawing.Point(435, 165);
+            this.cbBUP_ADI_OFF.Location = new System.Drawing.Point(426, 159);
             this.cbBUP_ADI_OFF.Name = "cbBUP_ADI_OFF";
             this.cbBUP_ADI_OFF.Size = new System.Drawing.Size(98, 17);
             this.cbBUP_ADI_OFF.TabIndex = 108;
@@ -1241,7 +1256,7 @@
             // cbVVI
             // 
             this.cbVVI.AutoSize = true;
-            this.cbVVI.Location = new System.Drawing.Point(435, 179);
+            this.cbVVI.Location = new System.Drawing.Point(426, 173);
             this.cbVVI.Name = "cbVVI";
             this.cbVVI.Size = new System.Drawing.Size(43, 17);
             this.cbVVI.TabIndex = 109;
@@ -1251,7 +1266,7 @@
             // cbAOA
             // 
             this.cbAOA.AutoSize = true;
-            this.cbAOA.Location = new System.Drawing.Point(435, 193);
+            this.cbAOA.Location = new System.Drawing.Point(426, 187);
             this.cbAOA.Name = "cbAOA";
             this.cbAOA.Size = new System.Drawing.Size(48, 17);
             this.cbAOA.TabIndex = 110;
@@ -1261,7 +1276,7 @@
             // cbAVTR
             // 
             this.cbAVTR.AutoSize = true;
-            this.cbAVTR.Location = new System.Drawing.Point(435, 207);
+            this.cbAVTR.Location = new System.Drawing.Point(426, 201);
             this.cbAVTR.Name = "cbAVTR";
             this.cbAVTR.Size = new System.Drawing.Size(55, 17);
             this.cbAVTR.TabIndex = 111;
@@ -1271,7 +1286,7 @@
             // cbOuterMarker
             // 
             this.cbOuterMarker.AutoSize = true;
-            this.cbOuterMarker.Location = new System.Drawing.Point(435, 221);
+            this.cbOuterMarker.Location = new System.Drawing.Point(426, 215);
             this.cbOuterMarker.Name = "cbOuterMarker";
             this.cbOuterMarker.Size = new System.Drawing.Size(85, 17);
             this.cbOuterMarker.TabIndex = 112;
@@ -1281,7 +1296,7 @@
             // cbMiddleMarker
             // 
             this.cbMiddleMarker.AutoSize = true;
-            this.cbMiddleMarker.Location = new System.Drawing.Point(435, 235);
+            this.cbMiddleMarker.Location = new System.Drawing.Point(426, 229);
             this.cbMiddleMarker.Name = "cbMiddleMarker";
             this.cbMiddleMarker.Size = new System.Drawing.Size(90, 17);
             this.cbMiddleMarker.TabIndex = 113;
@@ -1291,7 +1306,7 @@
             // cbFromTrue
             // 
             this.cbFromTrue.AutoSize = true;
-            this.cbFromTrue.Location = new System.Drawing.Point(435, 249);
+            this.cbFromTrue.Location = new System.Drawing.Point(426, 243);
             this.cbFromTrue.Name = "cbFromTrue";
             this.cbFromTrue.Size = new System.Drawing.Size(71, 17);
             this.cbFromTrue.TabIndex = 114;
@@ -1301,140 +1316,287 @@
             // cbFlying
             // 
             this.cbFlying.AutoSize = true;
-            this.cbFlying.Location = new System.Drawing.Point(435, 263);
+            this.cbFlying.Location = new System.Drawing.Point(426, 257);
             this.cbFlying.Name = "cbFlying";
             this.cbFlying.Size = new System.Drawing.Size(53, 17);
             this.cbFlying.TabIndex = 115;
             this.cbFlying.Text = "Flying";
             this.cbFlying.UseVisualStyleBackColor = true;
             // 
+            // tabControl
+            // 
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl.Controls.Add(this.tabPage1);
+            this.tabControl.Controls.Add(this.tabPage2);
+            this.tabControl.Controls.Add(this.tabPage3);
+            this.tabControl.Controls.Add(this.tabPage4);
+            this.tabControl.Controls.Add(this.tabPage5);
+            this.tabControl.Controls.Add(this.tabPage6);
+            this.tabControl.Controls.Add(this.tabPage7);
+            this.tabControl.Controls.Add(this.tabPage8);
+            this.tabControl.Controls.Add(this.tabPage9);
+            this.tabControl.Controls.Add(this.tabPage10);
+            this.tabControl.Controls.Add(this.tabPage11);
+            this.tabControl.Controls.Add(this.tabPage12);
+            this.tabControl.Location = new System.Drawing.Point(3, 1);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(880, 619);
+            this.tabControl.TabIndex = 116;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.cbFlying);
+            this.tabPage1.Controls.Add(this.cbMasterCaution);
+            this.tabPage1.Controls.Add(this.cbFromTrue);
+            this.tabPage1.Controls.Add(this.cbTF);
+            this.tabPage1.Controls.Add(this.cbMiddleMarker);
+            this.tabPage1.Controls.Add(this.cbOXY_BROW);
+            this.tabPage1.Controls.Add(this.cbOuterMarker);
+            this.tabPage1.Controls.Add(this.cbEQUIP_HOT);
+            this.tabPage1.Controls.Add(this.cbAVTR);
+            this.tabPage1.Controls.Add(this.cbONGROUND);
+            this.tabPage1.Controls.Add(this.cbAOA);
+            this.tabPage1.Controls.Add(this.cbENG_FIRE);
+            this.tabPage1.Controls.Add(this.cbVVI);
+            this.tabPage1.Controls.Add(this.cbCONFIG);
+            this.tabPage1.Controls.Add(this.cbBUP_ADI_OFF);
+            this.tabPage1.Controls.Add(this.cbHYD);
+            this.tabPage1.Controls.Add(this.cbHSI_OFF);
+            this.tabPage1.Controls.Add(this.cbFlcs_ABCD);
+            this.tabPage1.Controls.Add(this.cbADI_LOC);
+            this.tabPage1.Controls.Add(this.cbFLCS);
+            this.tabPage1.Controls.Add(this.cbADI_GS);
+            this.tabPage1.Controls.Add(this.cbCAN);
+            this.tabPage1.Controls.Add(this.cbADI_AUX);
+            this.tabPage1.Controls.Add(this.cbT_L_CFG);
+            this.tabPage1.Controls.Add(this.cbADI_OFF);
+            this.tabPage1.Controls.Add(this.cbAOAAbove);
+            this.tabPage1.Controls.Add(this.cbTotalFlags);
+            this.tabPage1.Controls.Add(this.cbAOAOn);
+            this.tabPage1.Controls.Add(this.cbInit);
+            this.tabPage1.Controls.Add(this.cbAOABelow);
+            this.tabPage1.Controls.Add(this.cbCourseWarning);
+            this.tabPage1.Controls.Add(this.cbRefuelRDY);
+            this.tabPage1.Controls.Add(this.cbIlsWarning);
+            this.tabPage1.Controls.Add(this.cbRefuelAR);
+            this.tabPage1.Controls.Add(this.cbToTrue);
+            this.tabPage1.Controls.Add(this.cbRefuelDSC);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.cbFltControlSys);
+            this.tabPage1.Controls.Add(this.cbInlet_Icing);
+            this.tabPage1.Controls.Add(this.cbLEFlaps);
+            this.tabPage1.Controls.Add(this.cbATF_Not_Engaged);
+            this.tabPage1.Controls.Add(this.cbEngineFault);
+            this.tabPage1.Controls.Add(this.cbNLGWOW);
+            this.tabPage1.Controls.Add(this.cbOverheat);
+            this.tabPage1.Controls.Add(this.cbMLGWOW);
+            this.tabPage1.Controls.Add(this.cbFuelLow);
+            this.tabPage1.Controls.Add(this.cbMCAnnounced);
+            this.tabPage1.Controls.Add(this.cbAvionics);
+            this.tabPage1.Controls.Add(this.cbSysTest);
+            this.tabPage1.Controls.Add(this.cbRadarAlt);
+            this.tabPage1.Controls.Add(this.cbSpeedBrake);
+            this.tabPage1.Controls.Add(this.cbIFF);
+            this.tabPage1.Controls.Add(this.cbcadc);
+            this.tabPage1.Controls.Add(this.cbECM);
+            this.tabPage1.Controls.Add(this.cbPower_Off);
+            this.tabPage1.Controls.Add(this.cbHook);
+            this.tabPage1.Controls.Add(this.cbParkBrakeOn);
+            this.tabPage1.Controls.Add(this.cbNWSFail);
+            this.tabPage1.Controls.Add(this.cbRightGearDown);
+            this.tabPage1.Controls.Add(this.cbCabinPress);
+            this.tabPage1.Controls.Add(this.cbLeftGearDown);
+            this.tabPage1.Controls.Add(this.cbAutoPilotOn);
+            this.tabPage1.Controls.Add(this.cbNoseGearDown);
+            this.tabPage1.Controls.Add(this.cbTFR_STBY);
+            this.tabPage1.Controls.Add(this.cbDbuWarn);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.cbFlcsBitFail);
+            this.tabPage1.Controls.Add(this.cbHandOff);
+            this.tabPage1.Controls.Add(this.cbFlcsBitRun);
+            this.tabPage1.Controls.Add(this.cbLaunch);
+            this.tabPage1.Controls.Add(this.cbOnGround2);
+            this.tabPage1.Controls.Add(this.cbNaval);
+            this.tabPage1.Controls.Add(this.cbLef_Fault);
+            this.tabPage1.Controls.Add(this.cbPriMode);
+            this.tabPage1.Controls.Add(this.cbElec_Fault);
+            this.tabPage1.Controls.Add(this.cbUnk);
+            this.tabPage1.Controls.Add(this.cbAir);
+            this.tabPage1.Controls.Add(this.cbTgtSep);
+            this.tabPage1.Controls.Add(this.cbHydrazine);
+            this.tabPage1.Controls.Add(this.cbGo);
+            this.tabPage1.Controls.Add(this.cbBatFail);
+            this.tabPage1.Controls.Add(this.cbNoGo);
+            this.tabPage1.Controls.Add(this.cbFlcsRly);
+            this.tabPage1.Controls.Add(this.cbDegr);
+            this.tabPage1.Controls.Add(this.cbToFlcs);
+            this.tabPage1.Controls.Add(this.cbRdy);
+            this.tabPage1.Controls.Add(this.cbEpuPmg);
+            this.tabPage1.Controls.Add(this.cbChaffLo);
+            this.tabPage1.Controls.Add(this.cbEpuGen);
+            this.tabPage1.Controls.Add(this.cbFlareLo);
+            this.tabPage1.Controls.Add(this.cbStbyGen);
+            this.tabPage1.Controls.Add(this.cbAuxSrch);
+            this.tabPage1.Controls.Add(this.cbMainGen);
+            this.tabPage1.Controls.Add(this.cbAuxAct);
+            this.tabPage1.Controls.Add(this.cbFlcsPmg);
+            this.tabPage1.Controls.Add(this.cbAuxLow);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.cbAuxPwr);
+            this.tabPage1.Controls.Add(this.cbENGINE);
+            this.tabPage1.Controls.Add(this.cbEcmPwr);
+            this.tabPage1.Controls.Add(this.cbGEARHANDLE);
+            this.tabPage1.Controls.Add(this.cbEcmFail);
+            this.tabPage1.Controls.Add(this.cbTFR_ENGAGED);
+            this.tabPage1.Controls.Add(this.cbFwdFuelLow);
+            this.tabPage1.Controls.Add(this.cbANTI_SKID);
+            this.tabPage1.Controls.Add(this.cbAftFuelLow);
+            this.tabPage1.Controls.Add(this.cbFUEL_OIL_HOT);
+            this.tabPage1.Controls.Add(this.cbEPUOn);
+            this.tabPage1.Controls.Add(this.cbBUC);
+            this.tabPage1.Controls.Add(this.cbJFSOn);
+            this.tabPage1.Controls.Add(this.cbSEAT_ARM);
+            this.tabPage1.Controls.Add(this.cbSEC);
+            this.tabPage1.Controls.Add(this.cbPROBEHEAT);
+            this.tabPage1.Controls.Add(this.cbOXY_LOW);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(872, 593);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "FD Bits";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(981, 674);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "FD Vars";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(551, 538);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "FD RWR";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(981, 674);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "FD DED/PFL";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(981, 674);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "FD2 Bits";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(981, 674);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "FD2 Vars";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(981, 674);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "FD2 RWR/Pilots";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(981, 674);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "OSB";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(981, 674);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "iVibe";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(981, 674);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "IVC RCS/RCC";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(981, 674);
+            this.tabPage11.TabIndex = 10;
+            this.tabPage11.Text = "Strings";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.Location = new System.Drawing.Point(4, 22);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(981, 674);
+            this.tabPage12.TabIndex = 11;
+            this.tabPage12.Text = "Raw Bits";
+            this.tabPage12.UseVisualStyleBackColor = true;
+            // 
             // SharedMemoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 485);
-            this.Controls.Add(this.cbFlying);
-            this.Controls.Add(this.cbFromTrue);
-            this.Controls.Add(this.cbMiddleMarker);
-            this.Controls.Add(this.cbOuterMarker);
-            this.Controls.Add(this.cbAVTR);
-            this.Controls.Add(this.cbAOA);
-            this.Controls.Add(this.cbVVI);
-            this.Controls.Add(this.cbBUP_ADI_OFF);
-            this.Controls.Add(this.cbHSI_OFF);
-            this.Controls.Add(this.cbADI_LOC);
-            this.Controls.Add(this.cbADI_GS);
-            this.Controls.Add(this.cbADI_AUX);
-            this.Controls.Add(this.cbADI_OFF);
-            this.Controls.Add(this.cbTotalFlags);
-            this.Controls.Add(this.cbInit);
-            this.Controls.Add(this.cbCourseWarning);
-            this.Controls.Add(this.cbIlsWarning);
-            this.Controls.Add(this.cbToTrue);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.cbInlet_Icing);
-            this.Controls.Add(this.cbATF_Not_Engaged);
-            this.Controls.Add(this.cbNLGWOW);
-            this.Controls.Add(this.cbMLGWOW);
-            this.Controls.Add(this.cbMCAnnounced);
-            this.Controls.Add(this.cbSysTest);
-            this.Controls.Add(this.cbSpeedBrake);
-            this.Controls.Add(this.cbcadc);
-            this.Controls.Add(this.cbPower_Off);
-            this.Controls.Add(this.cbParkBrakeOn);
-            this.Controls.Add(this.cbRightGearDown);
-            this.Controls.Add(this.cbLeftGearDown);
-            this.Controls.Add(this.cbNoseGearDown);
-            this.Controls.Add(this.cbDbuWarn);
-            this.Controls.Add(this.cbFlcsBitFail);
-            this.Controls.Add(this.cbFlcsBitRun);
-            this.Controls.Add(this.cbOnGround2);
-            this.Controls.Add(this.cbLef_Fault);
-            this.Controls.Add(this.cbElec_Fault);
-            this.Controls.Add(this.cbAir);
-            this.Controls.Add(this.cbHydrazine);
-            this.Controls.Add(this.cbBatFail);
-            this.Controls.Add(this.cbFlcsRly);
-            this.Controls.Add(this.cbToFlcs);
-            this.Controls.Add(this.cbEpuPmg);
-            this.Controls.Add(this.cbEpuGen);
-            this.Controls.Add(this.cbStbyGen);
-            this.Controls.Add(this.cbMainGen);
-            this.Controls.Add(this.cbFlcsPmg);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbENGINE);
-            this.Controls.Add(this.cbGEARHANDLE);
-            this.Controls.Add(this.cbTFR_ENGAGED);
-            this.Controls.Add(this.cbANTI_SKID);
-            this.Controls.Add(this.cbFUEL_OIL_HOT);
-            this.Controls.Add(this.cbBUC);
-            this.Controls.Add(this.cbSEAT_ARM);
-            this.Controls.Add(this.cbPROBEHEAT);
-            this.Controls.Add(this.cbOXY_LOW);
-            this.Controls.Add(this.cbSEC);
-            this.Controls.Add(this.cbJFSOn);
-            this.Controls.Add(this.cbEPUOn);
-            this.Controls.Add(this.cbAftFuelLow);
-            this.Controls.Add(this.cbFwdFuelLow);
-            this.Controls.Add(this.cbEcmFail);
-            this.Controls.Add(this.cbEcmPwr);
-            this.Controls.Add(this.cbAuxPwr);
-            this.Controls.Add(this.cbAuxLow);
-            this.Controls.Add(this.cbAuxAct);
-            this.Controls.Add(this.cbAuxSrch);
-            this.Controls.Add(this.cbFlareLo);
-            this.Controls.Add(this.cbChaffLo);
-            this.Controls.Add(this.cbRdy);
-            this.Controls.Add(this.cbDegr);
-            this.Controls.Add(this.cbNoGo);
-            this.Controls.Add(this.cbGo);
-            this.Controls.Add(this.cbTgtSep);
-            this.Controls.Add(this.cbUnk);
-            this.Controls.Add(this.cbPriMode);
-            this.Controls.Add(this.cbNaval);
-            this.Controls.Add(this.cbLaunch);
-            this.Controls.Add(this.cbHandOff);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbTFR_STBY);
-            this.Controls.Add(this.cbAutoPilotOn);
-            this.Controls.Add(this.cbCabinPress);
-            this.Controls.Add(this.cbNWSFail);
-            this.Controls.Add(this.cbHook);
-            this.Controls.Add(this.cbECM);
-            this.Controls.Add(this.cbIFF);
-            this.Controls.Add(this.cbRadarAlt);
-            this.Controls.Add(this.cbAvionics);
-            this.Controls.Add(this.cbFuelLow);
-            this.Controls.Add(this.cbOverheat);
-            this.Controls.Add(this.cbEngineFault);
-            this.Controls.Add(this.cbLEFlaps);
-            this.Controls.Add(this.cbFltControlSys);
-            this.Controls.Add(this.cbRefuelDSC);
-            this.Controls.Add(this.cbRefuelAR);
-            this.Controls.Add(this.cbRefuelRDY);
-            this.Controls.Add(this.cbAOABelow);
-            this.Controls.Add(this.cbAOAOn);
-            this.Controls.Add(this.cbAOAAbove);
-            this.Controls.Add(this.cbT_L_CFG);
-            this.Controls.Add(this.cbCAN);
-            this.Controls.Add(this.cbFLCS);
-            this.Controls.Add(this.cbFlcs_ABCD);
-            this.Controls.Add(this.cbHYD);
-            this.Controls.Add(this.cbCONFIG);
+            this.ClientSize = new System.Drawing.Size(884, 661);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.cbENG_FIRE);
-            this.Controls.Add(this.cbONGROUND);
-            this.Controls.Add(this.cbEQUIP_HOT);
-            this.Controls.Add(this.cbOXY_BROW);
-            this.Controls.Add(this.cbTF);
-            this.Controls.Add(this.cbMasterCaution);
-            this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(900, 700);
             this.Name = "SharedMemoryForm";
             this.Text = "BMS Shared Memory";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SharedMemoryForm_FormClosing);
             this.Load += new System.EventHandler(this.SharedMemoryForm_Load);
+            this.tabControl.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1556,6 +1718,19 @@
         private System.Windows.Forms.CheckBox cbMiddleMarker;
         private System.Windows.Forms.CheckBox cbFromTrue;
         private System.Windows.Forms.CheckBox cbFlying;
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.TabPage tabPage12;
     }
 }
 

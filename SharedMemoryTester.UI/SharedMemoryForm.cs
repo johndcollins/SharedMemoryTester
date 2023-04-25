@@ -256,7 +256,7 @@ namespace SharedMemoryTester.UI
 
             if (cbPROBEHEAT.Checked)
                 lightBits2 |= LightBits2.PROBEHEAT;
-            //
+
             if (cbSEAT_ARM.Checked)
                 lightBits2 |= LightBits2.SEAT_ARM;
 
