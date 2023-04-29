@@ -150,6 +150,49 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.cbSolenoidStatus = new System.Windows.Forms.CheckBox();
+            this.cbFlcs_Flcc_D = new System.Windows.Forms.CheckBox();
+            this.cbFlcs_Flcc_C = new System.Windows.Forms.CheckBox();
+            this.cbFlcs_Flcc_B = new System.Windows.Forms.CheckBox();
+            this.cbFlcs_Flcc_A = new System.Windows.Forms.CheckBox();
+            this.cbRALT_Valid = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbJetFuelStarter = new System.Windows.Forms.CheckBox();
+            this.cbStandbyGenerator = new System.Windows.Forms.CheckBox();
+            this.cbMainGenerator = new System.Windows.Forms.CheckBox();
+            this.cbBusPowerNonEssential = new System.Windows.Forms.CheckBox();
+            this.cbBusPowerEssential = new System.Windows.Forms.CheckBox();
+            this.cbBusPowerEmergency = new System.Windows.Forms.CheckBox();
+            this.cbBusPowerBattery = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbBBECM_Oper = new System.Windows.Forms.CheckBox();
+            this.cbLBECM_Oper = new System.Windows.Forms.CheckBox();
+            this.cbBBJFSOn_Fast = new System.Windows.Forms.CheckBox();
+            this.cbLBJFSOn_Fast = new System.Windows.Forms.CheckBox();
+            this.cbBBJFSOn_Slow = new System.Windows.Forms.CheckBox();
+            this.cbLBJFSOn_Slow = new System.Windows.Forms.CheckBox();
+            this.cbBBEPUOn = new System.Windows.Forms.CheckBox();
+            this.cbLBEPUOn = new System.Windows.Forms.CheckBox();
+            this.cbBBOXY_BROW = new System.Windows.Forms.CheckBox();
+            this.cbLBOXY_BROW = new System.Windows.Forms.CheckBox();
+            this.cbBBElec_Fault = new System.Windows.Forms.CheckBox();
+            this.cbLBElec_Fault = new System.Windows.Forms.CheckBox();
+            this.cbBBUnk = new System.Windows.Forms.CheckBox();
+            this.cbLBUnk = new System.Windows.Forms.CheckBox();
+            this.cbBBPriMode = new System.Windows.Forms.CheckBox();
+            this.cbLBPriMode = new System.Windows.Forms.CheckBox();
+            this.cbBBLaunch = new System.Windows.Forms.CheckBox();
+            this.cbLBLaunch = new System.Windows.Forms.CheckBox();
+            this.cbBBAuxSrch = new System.Windows.Forms.CheckBox();
+            this.cbLBAuxSrch = new System.Windows.Forms.CheckBox();
+            this.cbBBPROBEHEAT = new System.Windows.Forms.CheckBox();
+            this.cbLBPROBEHEAT = new System.Windows.Forms.CheckBox();
+            this.cbBBMiddleMarker = new System.Windows.Forms.CheckBox();
+            this.cbLBMiddleMarker = new System.Windows.Forms.CheckBox();
+            this.cbBBOuterMarker = new System.Windows.Forms.CheckBox();
+            this.cbLBOuterMarker = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
@@ -157,10 +200,6 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cbLBOuterMarker = new System.Windows.Forms.CheckBox();
-            this.cbBBOuterMarker = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -205,6 +244,7 @@
             this.cbOXY_BROW.TabIndex = 3;
             this.cbOXY_BROW.Text = "OXY_BROW";
             this.cbOXY_BROW.UseVisualStyleBackColor = true;
+            this.cbOXY_BROW.CheckedChanged += new System.EventHandler(this.cbOXY_BROW_CheckedChanged);
             // 
             // cbEQUIP_HOT
             // 
@@ -537,6 +577,7 @@
             this.cbLaunch.TabIndex = 36;
             this.cbLaunch.Text = "Launch";
             this.cbLaunch.UseVisualStyleBackColor = true;
+            this.cbLaunch.CheckedChanged += new System.EventHandler(this.cbLaunch_CheckedChanged);
             // 
             // cbNaval
             // 
@@ -557,6 +598,7 @@
             this.cbPriMode.TabIndex = 38;
             this.cbPriMode.Text = "PriMode";
             this.cbPriMode.UseVisualStyleBackColor = true;
+            this.cbPriMode.CheckedChanged += new System.EventHandler(this.cbPriMode_CheckedChanged);
             // 
             // cbUnk
             // 
@@ -567,6 +609,7 @@
             this.cbUnk.TabIndex = 39;
             this.cbUnk.Text = "Unk";
             this.cbUnk.UseVisualStyleBackColor = true;
+            this.cbUnk.CheckedChanged += new System.EventHandler(this.cbUnk_CheckedChanged);
             // 
             // cbTgtSep
             // 
@@ -647,6 +690,7 @@
             this.cbAuxSrch.TabIndex = 47;
             this.cbAuxSrch.Text = "AuxSrch";
             this.cbAuxSrch.UseVisualStyleBackColor = true;
+            this.cbAuxSrch.CheckedChanged += new System.EventHandler(this.cbAuxSrch_CheckedChanged);
             // 
             // cbAuxAct
             // 
@@ -727,6 +771,7 @@
             this.cbEPUOn.TabIndex = 55;
             this.cbEPUOn.Text = "EPUOn";
             this.cbEPUOn.UseVisualStyleBackColor = true;
+            this.cbEPUOn.CheckedChanged += new System.EventHandler(this.cbEPUOn_CheckedChanged);
             // 
             // cbJFSOn
             // 
@@ -737,6 +782,7 @@
             this.cbJFSOn.TabIndex = 56;
             this.cbJFSOn.Text = "JFSOn";
             this.cbJFSOn.UseVisualStyleBackColor = true;
+            this.cbJFSOn.CheckedChanged += new System.EventHandler(this.cbJFSOn_CheckedChanged);
             // 
             // cbSEC
             // 
@@ -767,6 +813,7 @@
             this.cbPROBEHEAT.TabIndex = 59;
             this.cbPROBEHEAT.Text = "PROBEHEAT";
             this.cbPROBEHEAT.UseVisualStyleBackColor = true;
+            this.cbPROBEHEAT.CheckedChanged += new System.EventHandler(this.cbPROBEHEAT_CheckedChanged);
             // 
             // cbSEAT_ARM
             // 
@@ -957,6 +1004,7 @@
             this.cbElec_Fault.TabIndex = 78;
             this.cbElec_Fault.Text = "Elec_Fault";
             this.cbElec_Fault.UseVisualStyleBackColor = true;
+            this.cbElec_Fault.CheckedChanged += new System.EventHandler(this.cbElec_Fault_CheckedChanged);
             // 
             // cbLef_Fault
             // 
@@ -1308,6 +1356,7 @@
             this.cbMiddleMarker.TabIndex = 113;
             this.cbMiddleMarker.Text = "MiddleMarker";
             this.cbMiddleMarker.UseVisualStyleBackColor = true;
+            this.cbMiddleMarker.CheckedChanged += new System.EventHandler(this.cbMiddleMarker_CheckedChanged);
             // 
             // cbFromTrue
             // 
@@ -1509,6 +1558,45 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.cbSolenoidStatus);
+            this.tabPage5.Controls.Add(this.cbFlcs_Flcc_D);
+            this.tabPage5.Controls.Add(this.cbFlcs_Flcc_C);
+            this.tabPage5.Controls.Add(this.cbFlcs_Flcc_B);
+            this.tabPage5.Controls.Add(this.cbFlcs_Flcc_A);
+            this.tabPage5.Controls.Add(this.cbRALT_Valid);
+            this.tabPage5.Controls.Add(this.label8);
+            this.tabPage5.Controls.Add(this.cbJetFuelStarter);
+            this.tabPage5.Controls.Add(this.cbStandbyGenerator);
+            this.tabPage5.Controls.Add(this.cbMainGenerator);
+            this.tabPage5.Controls.Add(this.cbBusPowerNonEssential);
+            this.tabPage5.Controls.Add(this.cbBusPowerEssential);
+            this.tabPage5.Controls.Add(this.cbBusPowerEmergency);
+            this.tabPage5.Controls.Add(this.cbBusPowerBattery);
+            this.tabPage5.Controls.Add(this.label7);
+            this.tabPage5.Controls.Add(this.cbBBECM_Oper);
+            this.tabPage5.Controls.Add(this.cbLBECM_Oper);
+            this.tabPage5.Controls.Add(this.cbBBJFSOn_Fast);
+            this.tabPage5.Controls.Add(this.cbLBJFSOn_Fast);
+            this.tabPage5.Controls.Add(this.cbBBJFSOn_Slow);
+            this.tabPage5.Controls.Add(this.cbLBJFSOn_Slow);
+            this.tabPage5.Controls.Add(this.cbBBEPUOn);
+            this.tabPage5.Controls.Add(this.cbLBEPUOn);
+            this.tabPage5.Controls.Add(this.cbBBOXY_BROW);
+            this.tabPage5.Controls.Add(this.cbLBOXY_BROW);
+            this.tabPage5.Controls.Add(this.cbBBElec_Fault);
+            this.tabPage5.Controls.Add(this.cbLBElec_Fault);
+            this.tabPage5.Controls.Add(this.cbBBUnk);
+            this.tabPage5.Controls.Add(this.cbLBUnk);
+            this.tabPage5.Controls.Add(this.cbBBPriMode);
+            this.tabPage5.Controls.Add(this.cbLBPriMode);
+            this.tabPage5.Controls.Add(this.cbBBLaunch);
+            this.tabPage5.Controls.Add(this.cbLBLaunch);
+            this.tabPage5.Controls.Add(this.cbBBAuxSrch);
+            this.tabPage5.Controls.Add(this.cbLBAuxSrch);
+            this.tabPage5.Controls.Add(this.cbBBPROBEHEAT);
+            this.tabPage5.Controls.Add(this.cbLBPROBEHEAT);
+            this.tabPage5.Controls.Add(this.cbBBMiddleMarker);
+            this.tabPage5.Controls.Add(this.cbLBMiddleMarker);
             this.tabPage5.Controls.Add(this.cbBBOuterMarker);
             this.tabPage5.Controls.Add(this.cbLBOuterMarker);
             this.tabPage5.Controls.Add(this.label6);
@@ -1520,6 +1608,449 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "FD2 Bits";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // cbSolenoidStatus
+            // 
+            this.cbSolenoidStatus.AutoSize = true;
+            this.cbSolenoidStatus.Location = new System.Drawing.Point(428, 120);
+            this.cbSolenoidStatus.Name = "cbSolenoidStatus";
+            this.cbSolenoidStatus.Size = new System.Drawing.Size(97, 17);
+            this.cbSolenoidStatus.TabIndex = 42;
+            this.cbSolenoidStatus.Text = "SolenoidStatus";
+            this.cbSolenoidStatus.UseVisualStyleBackColor = true;
+            // 
+            // cbFlcs_Flcc_D
+            // 
+            this.cbFlcs_Flcc_D.AutoSize = true;
+            this.cbFlcs_Flcc_D.Location = new System.Drawing.Point(428, 104);
+            this.cbFlcs_Flcc_D.Name = "cbFlcs_Flcc_D";
+            this.cbFlcs_Flcc_D.Size = new System.Drawing.Size(85, 17);
+            this.cbFlcs_Flcc_D.TabIndex = 41;
+            this.cbFlcs_Flcc_D.Text = "Flcs_Flcc_D";
+            this.cbFlcs_Flcc_D.UseVisualStyleBackColor = true;
+            // 
+            // cbFlcs_Flcc_C
+            // 
+            this.cbFlcs_Flcc_C.AutoSize = true;
+            this.cbFlcs_Flcc_C.Location = new System.Drawing.Point(428, 88);
+            this.cbFlcs_Flcc_C.Name = "cbFlcs_Flcc_C";
+            this.cbFlcs_Flcc_C.Size = new System.Drawing.Size(84, 17);
+            this.cbFlcs_Flcc_C.TabIndex = 40;
+            this.cbFlcs_Flcc_C.Text = "Flcs_Flcc_C";
+            this.cbFlcs_Flcc_C.UseVisualStyleBackColor = true;
+            // 
+            // cbFlcs_Flcc_B
+            // 
+            this.cbFlcs_Flcc_B.AutoSize = true;
+            this.cbFlcs_Flcc_B.Location = new System.Drawing.Point(428, 72);
+            this.cbFlcs_Flcc_B.Name = "cbFlcs_Flcc_B";
+            this.cbFlcs_Flcc_B.Size = new System.Drawing.Size(84, 17);
+            this.cbFlcs_Flcc_B.TabIndex = 39;
+            this.cbFlcs_Flcc_B.Text = "Flcs_Flcc_B";
+            this.cbFlcs_Flcc_B.UseVisualStyleBackColor = true;
+            // 
+            // cbFlcs_Flcc_A
+            // 
+            this.cbFlcs_Flcc_A.AutoSize = true;
+            this.cbFlcs_Flcc_A.Location = new System.Drawing.Point(428, 56);
+            this.cbFlcs_Flcc_A.Name = "cbFlcs_Flcc_A";
+            this.cbFlcs_Flcc_A.Size = new System.Drawing.Size(84, 17);
+            this.cbFlcs_Flcc_A.TabIndex = 38;
+            this.cbFlcs_Flcc_A.Text = "Flcs_Flcc_A";
+            this.cbFlcs_Flcc_A.UseVisualStyleBackColor = true;
+            // 
+            // cbRALT_Valid
+            // 
+            this.cbRALT_Valid.AutoSize = true;
+            this.cbRALT_Valid.Location = new System.Drawing.Point(428, 40);
+            this.cbRALT_Valid.Name = "cbRALT_Valid";
+            this.cbRALT_Valid.Size = new System.Drawing.Size(83, 17);
+            this.cbRALT_Valid.TabIndex = 37;
+            this.cbRALT_Valid.Text = "RALT_Valid";
+            this.cbRALT_Valid.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(425, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 13);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "MiscBits";
+            // 
+            // cbJetFuelStarter
+            // 
+            this.cbJetFuelStarter.AutoSize = true;
+            this.cbJetFuelStarter.Location = new System.Drawing.Point(224, 136);
+            this.cbJetFuelStarter.Name = "cbJetFuelStarter";
+            this.cbJetFuelStarter.Size = new System.Drawing.Size(91, 17);
+            this.cbJetFuelStarter.TabIndex = 35;
+            this.cbJetFuelStarter.Text = "JetFuelStarter";
+            this.cbJetFuelStarter.UseVisualStyleBackColor = true;
+            // 
+            // cbStandbyGenerator
+            // 
+            this.cbStandbyGenerator.AutoSize = true;
+            this.cbStandbyGenerator.Location = new System.Drawing.Point(224, 120);
+            this.cbStandbyGenerator.Name = "cbStandbyGenerator";
+            this.cbStandbyGenerator.Size = new System.Drawing.Size(112, 17);
+            this.cbStandbyGenerator.TabIndex = 34;
+            this.cbStandbyGenerator.Text = "StandbyGenerator";
+            this.cbStandbyGenerator.UseVisualStyleBackColor = true;
+            // 
+            // cbMainGenerator
+            // 
+            this.cbMainGenerator.AutoSize = true;
+            this.cbMainGenerator.Location = new System.Drawing.Point(224, 104);
+            this.cbMainGenerator.Name = "cbMainGenerator";
+            this.cbMainGenerator.Size = new System.Drawing.Size(96, 17);
+            this.cbMainGenerator.TabIndex = 33;
+            this.cbMainGenerator.Text = "MainGenerator";
+            this.cbMainGenerator.UseVisualStyleBackColor = true;
+            // 
+            // cbBusPowerNonEssential
+            // 
+            this.cbBusPowerNonEssential.AutoSize = true;
+            this.cbBusPowerNonEssential.Location = new System.Drawing.Point(224, 88);
+            this.cbBusPowerNonEssential.Name = "cbBusPowerNonEssential";
+            this.cbBusPowerNonEssential.Size = new System.Drawing.Size(136, 17);
+            this.cbBusPowerNonEssential.TabIndex = 32;
+            this.cbBusPowerNonEssential.Text = "BusPowerNonEssential";
+            this.cbBusPowerNonEssential.UseVisualStyleBackColor = true;
+            // 
+            // cbBusPowerEssential
+            // 
+            this.cbBusPowerEssential.AutoSize = true;
+            this.cbBusPowerEssential.Location = new System.Drawing.Point(224, 72);
+            this.cbBusPowerEssential.Name = "cbBusPowerEssential";
+            this.cbBusPowerEssential.Size = new System.Drawing.Size(116, 17);
+            this.cbBusPowerEssential.TabIndex = 31;
+            this.cbBusPowerEssential.Text = "BusPowerEssential";
+            this.cbBusPowerEssential.UseVisualStyleBackColor = true;
+            // 
+            // cbBusPowerEmergency
+            // 
+            this.cbBusPowerEmergency.AutoSize = true;
+            this.cbBusPowerEmergency.Location = new System.Drawing.Point(224, 56);
+            this.cbBusPowerEmergency.Name = "cbBusPowerEmergency";
+            this.cbBusPowerEmergency.Size = new System.Drawing.Size(127, 17);
+            this.cbBusPowerEmergency.TabIndex = 30;
+            this.cbBusPowerEmergency.Text = "BusPowerEmergency";
+            this.cbBusPowerEmergency.UseVisualStyleBackColor = true;
+            // 
+            // cbBusPowerBattery
+            // 
+            this.cbBusPowerBattery.AutoSize = true;
+            this.cbBusPowerBattery.Location = new System.Drawing.Point(224, 40);
+            this.cbBusPowerBattery.Name = "cbBusPowerBattery";
+            this.cbBusPowerBattery.Size = new System.Drawing.Size(107, 17);
+            this.cbBusPowerBattery.TabIndex = 29;
+            this.cbBusPowerBattery.Text = "BusPowerBattery";
+            this.cbBusPowerBattery.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(221, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 13);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "PowerBits";
+            // 
+            // cbBBECM_Oper
+            // 
+            this.cbBBECM_Oper.AutoSize = true;
+            this.cbBBECM_Oper.Location = new System.Drawing.Point(58, 232);
+            this.cbBBECM_Oper.Name = "cbBBECM_Oper";
+            this.cbBBECM_Oper.Size = new System.Drawing.Size(123, 17);
+            this.cbBBECM_Oper.TabIndex = 27;
+            this.cbBBECM_Oper.Text = "ECM_Oper (STDBY)";
+            this.cbBBECM_Oper.UseVisualStyleBackColor = true;
+            // 
+            // cbLBECM_Oper
+            // 
+            this.cbLBECM_Oper.AutoSize = true;
+            this.cbLBECM_Oper.Enabled = false;
+            this.cbLBECM_Oper.Location = new System.Drawing.Point(31, 233);
+            this.cbLBECM_Oper.Name = "cbLBECM_Oper";
+            this.cbLBECM_Oper.Size = new System.Drawing.Size(15, 14);
+            this.cbLBECM_Oper.TabIndex = 26;
+            this.cbLBECM_Oper.TabStop = false;
+            this.cbLBECM_Oper.UseVisualStyleBackColor = true;
+            // 
+            // cbBBJFSOn_Fast
+            // 
+            this.cbBBJFSOn_Fast.AutoSize = true;
+            this.cbBBJFSOn_Fast.Location = new System.Drawing.Point(58, 216);
+            this.cbBBJFSOn_Fast.Name = "cbBBJFSOn_Fast";
+            this.cbBBJFSOn_Fast.Size = new System.Drawing.Size(84, 17);
+            this.cbBBJFSOn_Fast.TabIndex = 25;
+            this.cbBBJFSOn_Fast.Text = "JFSOn_Fast";
+            this.cbBBJFSOn_Fast.UseVisualStyleBackColor = true;
+            // 
+            // cbLBJFSOn_Fast
+            // 
+            this.cbLBJFSOn_Fast.AutoSize = true;
+            this.cbLBJFSOn_Fast.Enabled = false;
+            this.cbLBJFSOn_Fast.Location = new System.Drawing.Point(31, 217);
+            this.cbLBJFSOn_Fast.Name = "cbLBJFSOn_Fast";
+            this.cbLBJFSOn_Fast.Size = new System.Drawing.Size(15, 14);
+            this.cbLBJFSOn_Fast.TabIndex = 24;
+            this.cbLBJFSOn_Fast.TabStop = false;
+            this.cbLBJFSOn_Fast.UseVisualStyleBackColor = true;
+            // 
+            // cbBBJFSOn_Slow
+            // 
+            this.cbBBJFSOn_Slow.AutoSize = true;
+            this.cbBBJFSOn_Slow.Location = new System.Drawing.Point(58, 200);
+            this.cbBBJFSOn_Slow.Name = "cbBBJFSOn_Slow";
+            this.cbBBJFSOn_Slow.Size = new System.Drawing.Size(87, 17);
+            this.cbBBJFSOn_Slow.TabIndex = 23;
+            this.cbBBJFSOn_Slow.Text = "JFSOn_Slow";
+            this.cbBBJFSOn_Slow.UseVisualStyleBackColor = true;
+            // 
+            // cbLBJFSOn_Slow
+            // 
+            this.cbLBJFSOn_Slow.AutoSize = true;
+            this.cbLBJFSOn_Slow.Enabled = false;
+            this.cbLBJFSOn_Slow.Location = new System.Drawing.Point(31, 201);
+            this.cbLBJFSOn_Slow.Name = "cbLBJFSOn_Slow";
+            this.cbLBJFSOn_Slow.Size = new System.Drawing.Size(15, 14);
+            this.cbLBJFSOn_Slow.TabIndex = 22;
+            this.cbLBJFSOn_Slow.TabStop = false;
+            this.cbLBJFSOn_Slow.UseVisualStyleBackColor = true;
+            // 
+            // cbBBEPUOn
+            // 
+            this.cbBBEPUOn.AutoSize = true;
+            this.cbBBEPUOn.Location = new System.Drawing.Point(58, 184);
+            this.cbBBEPUOn.Name = "cbBBEPUOn";
+            this.cbBBEPUOn.Size = new System.Drawing.Size(62, 17);
+            this.cbBBEPUOn.TabIndex = 21;
+            this.cbBBEPUOn.Text = "EPUOn";
+            this.cbBBEPUOn.UseVisualStyleBackColor = true;
+            // 
+            // cbLBEPUOn
+            // 
+            this.cbLBEPUOn.AutoSize = true;
+            this.cbLBEPUOn.Enabled = false;
+            this.cbLBEPUOn.Location = new System.Drawing.Point(31, 185);
+            this.cbLBEPUOn.Name = "cbLBEPUOn";
+            this.cbLBEPUOn.Size = new System.Drawing.Size(15, 14);
+            this.cbLBEPUOn.TabIndex = 20;
+            this.cbLBEPUOn.TabStop = false;
+            this.cbLBEPUOn.UseVisualStyleBackColor = true;
+            // 
+            // cbBBOXY_BROW
+            // 
+            this.cbBBOXY_BROW.AutoSize = true;
+            this.cbBBOXY_BROW.Location = new System.Drawing.Point(58, 168);
+            this.cbBBOXY_BROW.Name = "cbBBOXY_BROW";
+            this.cbBBOXY_BROW.Size = new System.Drawing.Size(88, 17);
+            this.cbBBOXY_BROW.TabIndex = 19;
+            this.cbBBOXY_BROW.Text = "OXY_BROW";
+            this.cbBBOXY_BROW.UseVisualStyleBackColor = true;
+            // 
+            // cbLBOXY_BROW
+            // 
+            this.cbLBOXY_BROW.AutoSize = true;
+            this.cbLBOXY_BROW.Enabled = false;
+            this.cbLBOXY_BROW.Location = new System.Drawing.Point(31, 169);
+            this.cbLBOXY_BROW.Name = "cbLBOXY_BROW";
+            this.cbLBOXY_BROW.Size = new System.Drawing.Size(15, 14);
+            this.cbLBOXY_BROW.TabIndex = 18;
+            this.cbLBOXY_BROW.TabStop = false;
+            this.cbLBOXY_BROW.UseVisualStyleBackColor = true;
+            // 
+            // cbBBElec_Fault
+            // 
+            this.cbBBElec_Fault.AutoSize = true;
+            this.cbBBElec_Fault.Location = new System.Drawing.Point(58, 152);
+            this.cbBBElec_Fault.Name = "cbBBElec_Fault";
+            this.cbBBElec_Fault.Size = new System.Drawing.Size(76, 17);
+            this.cbBBElec_Fault.TabIndex = 17;
+            this.cbBBElec_Fault.Text = "Elec_Fault";
+            this.cbBBElec_Fault.UseVisualStyleBackColor = true;
+            // 
+            // cbLBElec_Fault
+            // 
+            this.cbLBElec_Fault.AutoSize = true;
+            this.cbLBElec_Fault.Enabled = false;
+            this.cbLBElec_Fault.Location = new System.Drawing.Point(31, 153);
+            this.cbLBElec_Fault.Name = "cbLBElec_Fault";
+            this.cbLBElec_Fault.Size = new System.Drawing.Size(15, 14);
+            this.cbLBElec_Fault.TabIndex = 16;
+            this.cbLBElec_Fault.TabStop = false;
+            this.cbLBElec_Fault.UseVisualStyleBackColor = true;
+            // 
+            // cbBBUnk
+            // 
+            this.cbBBUnk.AutoSize = true;
+            this.cbBBUnk.Location = new System.Drawing.Point(58, 136);
+            this.cbBBUnk.Name = "cbBBUnk";
+            this.cbBBUnk.Size = new System.Drawing.Size(46, 17);
+            this.cbBBUnk.TabIndex = 15;
+            this.cbBBUnk.Text = "Unk";
+            this.cbBBUnk.UseVisualStyleBackColor = true;
+            // 
+            // cbLBUnk
+            // 
+            this.cbLBUnk.AutoSize = true;
+            this.cbLBUnk.Enabled = false;
+            this.cbLBUnk.Location = new System.Drawing.Point(31, 137);
+            this.cbLBUnk.Name = "cbLBUnk";
+            this.cbLBUnk.Size = new System.Drawing.Size(15, 14);
+            this.cbLBUnk.TabIndex = 14;
+            this.cbLBUnk.TabStop = false;
+            this.cbLBUnk.UseVisualStyleBackColor = true;
+            // 
+            // cbBBPriMode
+            // 
+            this.cbBBPriMode.AutoSize = true;
+            this.cbBBPriMode.Location = new System.Drawing.Point(58, 120);
+            this.cbBBPriMode.Name = "cbBBPriMode";
+            this.cbBBPriMode.Size = new System.Drawing.Size(65, 17);
+            this.cbBBPriMode.TabIndex = 13;
+            this.cbBBPriMode.Text = "PriMode";
+            this.cbBBPriMode.UseVisualStyleBackColor = true;
+            // 
+            // cbLBPriMode
+            // 
+            this.cbLBPriMode.AutoSize = true;
+            this.cbLBPriMode.Enabled = false;
+            this.cbLBPriMode.Location = new System.Drawing.Point(31, 121);
+            this.cbLBPriMode.Name = "cbLBPriMode";
+            this.cbLBPriMode.Size = new System.Drawing.Size(15, 14);
+            this.cbLBPriMode.TabIndex = 12;
+            this.cbLBPriMode.TabStop = false;
+            this.cbLBPriMode.UseVisualStyleBackColor = true;
+            // 
+            // cbBBLaunch
+            // 
+            this.cbBBLaunch.AutoSize = true;
+            this.cbBBLaunch.Location = new System.Drawing.Point(58, 104);
+            this.cbBBLaunch.Name = "cbBBLaunch";
+            this.cbBBLaunch.Size = new System.Drawing.Size(62, 17);
+            this.cbBBLaunch.TabIndex = 11;
+            this.cbBBLaunch.Text = "Launch";
+            this.cbBBLaunch.UseVisualStyleBackColor = true;
+            // 
+            // cbLBLaunch
+            // 
+            this.cbLBLaunch.AutoSize = true;
+            this.cbLBLaunch.Enabled = false;
+            this.cbLBLaunch.Location = new System.Drawing.Point(31, 105);
+            this.cbLBLaunch.Name = "cbLBLaunch";
+            this.cbLBLaunch.Size = new System.Drawing.Size(15, 14);
+            this.cbLBLaunch.TabIndex = 10;
+            this.cbLBLaunch.TabStop = false;
+            this.cbLBLaunch.UseVisualStyleBackColor = true;
+            // 
+            // cbBBAuxSrch
+            // 
+            this.cbBBAuxSrch.AutoSize = true;
+            this.cbBBAuxSrch.Location = new System.Drawing.Point(58, 88);
+            this.cbBBAuxSrch.Name = "cbBBAuxSrch";
+            this.cbBBAuxSrch.Size = new System.Drawing.Size(66, 17);
+            this.cbBBAuxSrch.TabIndex = 9;
+            this.cbBBAuxSrch.Text = "AuxSrch";
+            this.cbBBAuxSrch.UseVisualStyleBackColor = true;
+            // 
+            // cbLBAuxSrch
+            // 
+            this.cbLBAuxSrch.AutoSize = true;
+            this.cbLBAuxSrch.Enabled = false;
+            this.cbLBAuxSrch.Location = new System.Drawing.Point(31, 89);
+            this.cbLBAuxSrch.Name = "cbLBAuxSrch";
+            this.cbLBAuxSrch.Size = new System.Drawing.Size(15, 14);
+            this.cbLBAuxSrch.TabIndex = 8;
+            this.cbLBAuxSrch.TabStop = false;
+            this.cbLBAuxSrch.UseVisualStyleBackColor = true;
+            // 
+            // cbBBPROBEHEAT
+            // 
+            this.cbBBPROBEHEAT.AutoSize = true;
+            this.cbBBPROBEHEAT.Location = new System.Drawing.Point(58, 72);
+            this.cbBBPROBEHEAT.Name = "cbBBPROBEHEAT";
+            this.cbBBPROBEHEAT.Size = new System.Drawing.Size(92, 17);
+            this.cbBBPROBEHEAT.TabIndex = 7;
+            this.cbBBPROBEHEAT.Text = "PROBEHEAT";
+            this.cbBBPROBEHEAT.UseVisualStyleBackColor = true;
+            // 
+            // cbLBPROBEHEAT
+            // 
+            this.cbLBPROBEHEAT.AutoSize = true;
+            this.cbLBPROBEHEAT.Enabled = false;
+            this.cbLBPROBEHEAT.Location = new System.Drawing.Point(31, 73);
+            this.cbLBPROBEHEAT.Name = "cbLBPROBEHEAT";
+            this.cbLBPROBEHEAT.Size = new System.Drawing.Size(15, 14);
+            this.cbLBPROBEHEAT.TabIndex = 6;
+            this.cbLBPROBEHEAT.TabStop = false;
+            this.cbLBPROBEHEAT.UseVisualStyleBackColor = true;
+            // 
+            // cbBBMiddleMarker
+            // 
+            this.cbBBMiddleMarker.AutoSize = true;
+            this.cbBBMiddleMarker.Location = new System.Drawing.Point(58, 56);
+            this.cbBBMiddleMarker.Name = "cbBBMiddleMarker";
+            this.cbBBMiddleMarker.Size = new System.Drawing.Size(90, 17);
+            this.cbBBMiddleMarker.TabIndex = 5;
+            this.cbBBMiddleMarker.Text = "MiddleMarker";
+            this.cbBBMiddleMarker.UseVisualStyleBackColor = true;
+            // 
+            // cbLBMiddleMarker
+            // 
+            this.cbLBMiddleMarker.AutoSize = true;
+            this.cbLBMiddleMarker.Enabled = false;
+            this.cbLBMiddleMarker.Location = new System.Drawing.Point(31, 57);
+            this.cbLBMiddleMarker.Name = "cbLBMiddleMarker";
+            this.cbLBMiddleMarker.Size = new System.Drawing.Size(15, 14);
+            this.cbLBMiddleMarker.TabIndex = 4;
+            this.cbLBMiddleMarker.TabStop = false;
+            this.cbLBMiddleMarker.UseVisualStyleBackColor = true;
+            // 
+            // cbBBOuterMarker
+            // 
+            this.cbBBOuterMarker.AutoSize = true;
+            this.cbBBOuterMarker.Location = new System.Drawing.Point(58, 40);
+            this.cbBBOuterMarker.Name = "cbBBOuterMarker";
+            this.cbBBOuterMarker.Size = new System.Drawing.Size(85, 17);
+            this.cbBBOuterMarker.TabIndex = 3;
+            this.cbBBOuterMarker.Text = "OuterMarker";
+            this.cbBBOuterMarker.UseVisualStyleBackColor = true;
+            // 
+            // cbLBOuterMarker
+            // 
+            this.cbLBOuterMarker.AutoSize = true;
+            this.cbLBOuterMarker.Enabled = false;
+            this.cbLBOuterMarker.Location = new System.Drawing.Point(31, 41);
+            this.cbLBOuterMarker.Name = "cbLBOuterMarker";
+            this.cbLBOuterMarker.Size = new System.Drawing.Size(15, 14);
+            this.cbLBOuterMarker.TabIndex = 2;
+            this.cbLBOuterMarker.TabStop = false;
+            this.cbLBOuterMarker.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(52, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "BlinkBits";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(15, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "(LBs)";
             // 
             // tabPage6
             // 
@@ -1590,47 +2121,6 @@
             this.tabPage12.TabIndex = 11;
             this.tabPage12.Text = "Raw Bits";
             this.tabPage12.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "(LBs)";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(52, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "BlinkBits";
-            // 
-            // cbLBOuterMarker
-            // 
-            this.cbLBOuterMarker.AutoSize = true;
-            this.cbLBOuterMarker.Enabled = false;
-            this.cbLBOuterMarker.Location = new System.Drawing.Point(31, 41);
-            this.cbLBOuterMarker.Name = "cbLBOuterMarker";
-            this.cbLBOuterMarker.Size = new System.Drawing.Size(15, 14);
-            this.cbLBOuterMarker.TabIndex = 2;
-            this.cbLBOuterMarker.TabStop = false;
-            this.cbLBOuterMarker.UseVisualStyleBackColor = true;
-            // 
-            // cbBBOuterMarker
-            // 
-            this.cbBBOuterMarker.AutoSize = true;
-            this.cbBBOuterMarker.Location = new System.Drawing.Point(58, 40);
-            this.cbBBOuterMarker.Name = "cbBBOuterMarker";
-            this.cbBBOuterMarker.Size = new System.Drawing.Size(85, 17);
-            this.cbBBOuterMarker.TabIndex = 3;
-            this.cbBBOuterMarker.Text = "OuterMarker";
-            this.cbBBOuterMarker.UseVisualStyleBackColor = true;
             // 
             // SharedMemoryForm
             // 
@@ -1788,6 +2278,45 @@
         private System.Windows.Forms.CheckBox cbLBOuterMarker;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox cbLBMiddleMarker;
+        private System.Windows.Forms.CheckBox cbBBMiddleMarker;
+        private System.Windows.Forms.CheckBox cbBBPROBEHEAT;
+        private System.Windows.Forms.CheckBox cbLBPROBEHEAT;
+        private System.Windows.Forms.CheckBox cbBBAuxSrch;
+        private System.Windows.Forms.CheckBox cbLBAuxSrch;
+        private System.Windows.Forms.CheckBox cbBBLaunch;
+        private System.Windows.Forms.CheckBox cbLBLaunch;
+        private System.Windows.Forms.CheckBox cbBBPriMode;
+        private System.Windows.Forms.CheckBox cbLBPriMode;
+        private System.Windows.Forms.CheckBox cbBBUnk;
+        private System.Windows.Forms.CheckBox cbLBUnk;
+        private System.Windows.Forms.CheckBox cbBBElec_Fault;
+        private System.Windows.Forms.CheckBox cbLBElec_Fault;
+        private System.Windows.Forms.CheckBox cbBBOXY_BROW;
+        private System.Windows.Forms.CheckBox cbLBOXY_BROW;
+        private System.Windows.Forms.CheckBox cbBBEPUOn;
+        private System.Windows.Forms.CheckBox cbLBEPUOn;
+        private System.Windows.Forms.CheckBox cbBBJFSOn_Slow;
+        private System.Windows.Forms.CheckBox cbLBJFSOn_Slow;
+        private System.Windows.Forms.CheckBox cbBBJFSOn_Fast;
+        private System.Windows.Forms.CheckBox cbLBJFSOn_Fast;
+        private System.Windows.Forms.CheckBox cbBBECM_Oper;
+        private System.Windows.Forms.CheckBox cbLBECM_Oper;
+        private System.Windows.Forms.CheckBox cbBusPowerBattery;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox cbJetFuelStarter;
+        private System.Windows.Forms.CheckBox cbStandbyGenerator;
+        private System.Windows.Forms.CheckBox cbMainGenerator;
+        private System.Windows.Forms.CheckBox cbBusPowerNonEssential;
+        private System.Windows.Forms.CheckBox cbBusPowerEssential;
+        private System.Windows.Forms.CheckBox cbBusPowerEmergency;
+        private System.Windows.Forms.CheckBox cbSolenoidStatus;
+        private System.Windows.Forms.CheckBox cbFlcs_Flcc_D;
+        private System.Windows.Forms.CheckBox cbFlcs_Flcc_C;
+        private System.Windows.Forms.CheckBox cbFlcs_Flcc_B;
+        private System.Windows.Forms.CheckBox cbFlcs_Flcc_A;
+        private System.Windows.Forms.CheckBox cbRALT_Valid;
+        private System.Windows.Forms.Label label8;
     }
 }
 

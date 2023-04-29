@@ -51,7 +51,7 @@ namespace SharedMemoryTester.UI
             flightData.PFLLines = new DED_PFL_LineOfText[5];
             flightData.RWRsymbol = new int[FlightData.MAX_RWR_OBJECTS];
             flightData.selected = new uint[FlightData.MAX_RWR_OBJECTS];
-            
+
             flightData.lightBits = GetLightBits();
             flightData.lightBits2 = GetLightBits2();
             flightData.lightBits3 = GetLightBits3();
@@ -85,6 +85,8 @@ namespace SharedMemoryTester.UI
             flightData2.tacanInfo = new byte[(int)TacanSources.NUMBER_OF_SOURCES];
 
             flightData2.blinkBits = GetBlinkBits();
+            flightData2.powerBits = GetPowerBits();
+            flightData2.miscBits = GetMiscBits();
 
             {
                 int size = Marshal.SizeOf(flightData2);
@@ -145,7 +147,7 @@ namespace SharedMemoryTester.UI
 
             if (cbT_L_CFG.Checked)
                 lightBits |= LightBits.T_L_CFG;
-            
+
             if (cbAOAAbove.Checked)
                 lightBits |= LightBits.AOAAbove;
 
@@ -154,7 +156,7 @@ namespace SharedMemoryTester.UI
 
             if (cbAOABelow.Checked)
                 lightBits |= LightBits.AOABelow;
-            
+
             if (cbRefuelRDY.Checked)
                 lightBits |= LightBits.RefuelRDY;
 
@@ -163,7 +165,7 @@ namespace SharedMemoryTester.UI
 
             if (cbRefuelDSC.Checked)
                 lightBits |= LightBits.RefuelDSC;
-            
+
             if (cbFltControlSys.Checked)
                 lightBits |= LightBits.FltControlSys;
 
@@ -172,7 +174,7 @@ namespace SharedMemoryTester.UI
 
             if (cbEngineFault.Checked)
                 lightBits |= LightBits.EngineFault;
-            
+
             if (cbOverheat.Checked)
                 lightBits |= LightBits.Overheat;
 
@@ -187,7 +189,7 @@ namespace SharedMemoryTester.UI
 
             if (cbIFF.Checked)
                 lightBits |= LightBits.IFF;
-            
+
             if (cbECM.Checked)
                 lightBits |= LightBits.ECM;
 
@@ -216,7 +218,7 @@ namespace SharedMemoryTester.UI
 
             if (cbHandOff.Checked)
                 lightBits2 |= LightBits2.HandOff;
-            
+
             if (cbLaunch.Checked)
                 lightBits2 |= LightBits2.Launch;
 
@@ -231,7 +233,7 @@ namespace SharedMemoryTester.UI
 
             if (cbTgtSep.Checked)
                 lightBits2 |= LightBits2.TgtSep;
-            
+
             if (cbGo.Checked)
                 lightBits2 |= LightBits2.Go;
 
@@ -249,7 +251,7 @@ namespace SharedMemoryTester.UI
 
             if (cbFlareLo.Checked)
                 lightBits2 |= LightBits2.FlareLo;
-            
+
             if (cbAuxSrch.Checked)
                 lightBits2 |= LightBits2.AuxSrch;
 
@@ -261,25 +263,25 @@ namespace SharedMemoryTester.UI
 
             if (cbAuxPwr.Checked)
                 lightBits2 |= LightBits2.AuxPwr;
-            
+
             if (cbEcmPwr.Checked)
                 lightBits2 |= LightBits2.EcmPwr;
 
             if (cbEcmFail.Checked)
                 lightBits2 |= LightBits2.EcmFail;
-            
+
             if (cbFwdFuelLow.Checked)
                 lightBits2 |= LightBits2.FwdFuelLow;
 
             if (cbAftFuelLow.Checked)
                 lightBits2 |= LightBits2.AftFuelLow;
-            
+
             if (cbEPUOn.Checked)
                 lightBits2 |= LightBits2.EPUOn;
 
             if (cbJFSOn.Checked)
                 lightBits2 |= LightBits2.JFSOn;
-            
+
             if (cbSEC.Checked)
                 lightBits2 |= LightBits2.SEC;
 
@@ -320,7 +322,7 @@ namespace SharedMemoryTester.UI
 
             if (cbFlcsPmg.Checked)
                 lightBits3 |= LightBits3.FlcsPmg;
-            
+
             if (cbMainGen.Checked)
                 lightBits3 |= LightBits3.MainGen;
 
@@ -341,22 +343,22 @@ namespace SharedMemoryTester.UI
 
             if (cbBatFail.Checked)
                 lightBits3 |= LightBits3.BatFail;
-            
+
             if (cbHydrazine.Checked)
                 lightBits3 |= LightBits3.Hydrazine;
 
             if (cbAir.Checked)
                 lightBits3 |= LightBits3.Air;
-            
+
             if (cbElec_Fault.Checked)
                 lightBits3 |= LightBits3.Elec_Fault;
 
             if (cbLef_Fault.Checked)
                 lightBits3 |= LightBits3.Lef_Fault;
-            
+
             if (cbOnGround2.Checked)
                 lightBits3 |= LightBits3.OnGround;
-            
+
             if (cbFlcsBitRun.Checked)
                 lightBits3 |= LightBits3.FlcsBitRun;
 
@@ -415,7 +417,7 @@ namespace SharedMemoryTester.UI
 
             if (cbIlsWarning.Checked)
                 hsiBits |= HsiBits.IlsWarning;
-            
+
             if (cbCourseWarning.Checked)
                 hsiBits |= HsiBits.CourseWarning;
 
@@ -439,7 +441,7 @@ namespace SharedMemoryTester.UI
 
             if (cbHSI_OFF.Checked)
                 hsiBits |= HsiBits.HSI_OFF;
-            
+
             if (cbBUP_ADI_OFF.Checked)
                 hsiBits |= HsiBits.BUP_ADI_OFF;
 
@@ -475,7 +477,98 @@ namespace SharedMemoryTester.UI
             if (cbBBOuterMarker.Checked)
                 blinkBits |= BlinkBits.OuterMarker;
 
+            if (cbBBMiddleMarker.Checked)
+                blinkBits |= BlinkBits.MiddleMarker;
+
+            if (cbBBPROBEHEAT.Checked)
+                blinkBits |= BlinkBits.PROBEHEAT;
+
+            if (cbBBAuxSrch.Checked)
+                blinkBits |= BlinkBits.AuxSrch;
+
+            if (cbBBLaunch.Checked)
+                blinkBits |= BlinkBits.Launch;
+
+            if (cbBBPriMode.Checked)
+                blinkBits |= BlinkBits.PriMode;
+
+            if (cbBBUnk.Checked)
+                blinkBits |= BlinkBits.Unk;
+
+            if (cbBBElec_Fault.Checked)
+                blinkBits |= BlinkBits.Elec_Fault;
+
+            if (cbBBOXY_BROW.Checked)
+                blinkBits |= BlinkBits.OXY_BROW;
+
+            if (cbBBEPUOn.Checked)
+                blinkBits |= BlinkBits.EPUOn;
+
+            if (cbBBJFSOn_Slow.Checked)
+                blinkBits |= BlinkBits.JFSOn_Slow;
+
+            if (cbBBJFSOn_Fast.Checked)
+                blinkBits |= BlinkBits.JFSOn_Fast;
+
+            if (cbBBECM_Oper.Checked)
+                blinkBits |= BlinkBits.ECM_Oper;
+
             return (uint)blinkBits;
+        }
+
+        private uint GetPowerBits()
+        {
+            PowerBits powerBits = new PowerBits();
+            powerBits = 0;
+
+            if (cbBusPowerBattery.Checked)
+                powerBits |= PowerBits.BusPowerBattery;
+            
+            if (cbBusPowerEmergency.Checked)
+                powerBits |= PowerBits.BusPowerEmergency;
+
+            if (cbBusPowerEssential.Checked)
+                powerBits |= PowerBits.BusPowerEssential;
+
+            if (cbBusPowerNonEssential.Checked)
+                powerBits |= PowerBits.BusPowerNonEssential;
+
+            if (cbMainGenerator.Checked)
+                powerBits |= PowerBits.MainGenerator;
+
+            if (cbStandbyGenerator.Checked)
+                powerBits |= PowerBits.StandbyGenerator;
+
+            if (cbJetFuelStarter.Checked)
+                powerBits |= PowerBits.JetFuelStarter;
+
+            return ((uint)powerBits);
+        }
+
+        private uint GetMiscBits()
+        {
+            MiscBits miscBits = new MiscBits();
+            miscBits = 0;
+
+            if (cbRALT_Valid.Checked)
+                miscBits |= MiscBits.RALT_Valid;
+
+            if (cbFlcs_Flcc_A.Checked)
+                miscBits |= MiscBits.Flcs_Flcc_A;
+
+            if (cbFlcs_Flcc_B.Checked)
+                miscBits |= MiscBits.Flcs_Flcc_B;
+
+            if (cbFlcs_Flcc_C.Checked)
+                miscBits |= MiscBits.Flcs_Flcc_C;
+
+            if (cbFlcs_Flcc_D.Checked)
+                miscBits |= MiscBits.Flcs_Flcc_D;
+
+            if (cbSolenoidStatus.Checked)
+                miscBits |= MiscBits.SolenoidStatus;
+            
+            return ((uint)miscBits);
         }
 
         private void WriteSampleToSharedMemory()
@@ -555,6 +648,59 @@ namespace SharedMemoryTester.UI
         private void cbOuterMarker_CheckedChanged(object sender, EventArgs e)
         {
             cbLBOuterMarker.Checked = cbOuterMarker.Checked;
+        }
+        private void cbMiddleMarker_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBMiddleMarker.Checked = cbMiddleMarker.Checked;
+        }
+        private void cbPROBEHEAT_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBPROBEHEAT.Checked = cbPROBEHEAT.Checked;
+        }
+        private void cbAuxSrch_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBAuxSrch.Checked = cbAuxSrch.Checked;
+        }
+        private void cbLaunch_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBLaunch.Checked = cbLaunch.Checked;
+        }
+        private void cbPriMode_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBPriMode.Checked = cbPriMode.Checked;
+        }
+        private void cbUnk_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBUnk.Checked = cbUnk.Checked;
+        }
+        private void cbElec_Fault_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBElec_Fault.Checked = cbElec_Fault.Checked;
+        }
+        private void cbOXY_BROW_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBOXY_BROW.Checked = cbOXY_BROW.Checked;
+        }
+        private void cbEPUOn_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBEPUOn.Checked = cbEPUOn.Checked;
+        }
+        private void cbJFSOn_Slow_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBJFSOn_Slow.Checked = cbJFSOn.Checked;
+        }
+        private void cbJFSOn_Fast_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBJFSOn_Fast.Checked = cbJFSOn.Checked;
+        }
+        private void cbJFSOn_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBJFSOn_Slow.Checked = cbJFSOn.Checked;
+            cbLBJFSOn_Fast.Checked = cbJFSOn.Checked;
+        }
+        private void cbECM_Oper_CheckedChanged(object sender, EventArgs e)
+        {
+            cbLBECM_Oper.Checked = cbECM.Checked;
         }
     }
 }
